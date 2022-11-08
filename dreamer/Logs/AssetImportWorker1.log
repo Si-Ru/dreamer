@@ -15,7 +15,7 @@ D:/40_석사과정/workspace/dreamer/dreamer
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60434
+63175
 Successfully changed project path to: D:/40_석사과정/workspace/dreamer/dreamer
 D:/40_석사과정/workspace/dreamer/dreamer
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/40_석사과정/workspace/dreamer/dreamer
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 85.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,51 +63,525 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.021289 seconds.
+Registered in 0.020460 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 83.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 90.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.779 seconds
+- Completed reload, in  0.788 seconds
 Domain Reload Profiling:
-	ReloadAssembly (780ms)
-		BeginReloadAssembly (116ms)
+	ReloadAssembly (789ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (502ms)
-			LoadAssemblies (113ms)
+		EndReloadAssembly (536ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (122ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (284ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (299ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (128ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007315 seconds.
+Registered in 0.006740 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\40_석사과정\workspace\dreamer\dreamer\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\40_석사과정\workspace\dreamer\dreamer\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.305 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1306ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (960ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (319ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (435ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.8 KB). Loaded Objects now: 3847.
+Memory consumption went from 116.6 MB to 116.4 MB.
+Total: 3.805500 ms (FindLiveObjects: 0.266100 ms CreateObjectMapping: 0.187700 ms MarkObjects: 3.246400 ms  DeleteObjects: 0.104300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2157488.336404 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/A_Modelings/UE5_Manny.FBX
+  artifactKey: Guid(c1c4fd3dc1d63244ea50f38f38465094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/A_Modelings/UE5_Manny.FBX using Guid(c1c4fd3dc1d63244ea50f38f38465094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c6bcfd9884bbcd7fd974a0d4775a44') in 0.474207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.363272 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Big_Bottle_BaseColor.png
+  artifactKey: Guid(3220fa55062c2a743949d23bb2bb6608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Big_Bottle_BaseColor.png using Guid(3220fa55062c2a743949d23bb2bb6608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c8732fc0183c6cff2d6d951394b98a') in 0.036089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_Normal.png
+  artifactKey: Guid(05cb8d52d72f7ac4a99e41cf44a57885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_Normal.png using Guid(05cb8d52d72f7ac4a99e41cf44a57885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d609748948523f426ca8f301dd0f7c3') in 0.020862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Mug_AO.png
+  artifactKey: Guid(212f88efc303e4f46a5fdea10386caf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Mug_AO.png using Guid(212f88efc303e4f46a5fdea10386caf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f49b1a3fd38a0c3a3a15e117c7baea') in 0.013279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf02_BaseColor.png
+  artifactKey: Guid(dab5dc0b07a78e94e9e78ad5d9a702f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf02_BaseColor.png using Guid(dab5dc0b07a78e94e9e78ad5d9a702f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e90baceb147551525f288c2b8564ec7') in 0.016339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_BaseColor.png
+  artifactKey: Guid(60f8faed4243a234ebb628aeaa6d1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_BaseColor.png using Guid(60f8faed4243a234ebb628aeaa6d1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24f652b61b3d4086ab34e27921e9724f') in 0.013525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf03_BaseColor.png
+  artifactKey: Guid(a97a5c796110c6c4594f7809694acae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf03_BaseColor.png using Guid(a97a5c796110c6c4594f7809694acae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022932feff262de5fd1f19a1103928ac') in 0.014509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_BaseColor.png
+  artifactKey: Guid(f75369d20066ecb45bbdf719795244fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_BaseColor.png using Guid(f75369d20066ecb45bbdf719795244fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f31f0a81932b43a6b9ea9f9236f10e3') in 0.012086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File04_Normal.png
+  artifactKey: Guid(e6353cf798a53824bb7ae8236d43885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File04_Normal.png using Guid(e6353cf798a53824bb7ae8236d43885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3259aa78afdc93c617a1544e33d527c') in 0.015195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_Roughness.png
+  artifactKey: Guid(a59d27a9145399d4288b0b0142dd4edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_Roughness.png using Guid(a59d27a9145399d4288b0b0142dd4edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a88fb113494a0d5c34744af3f35b5c') in 0.016224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Monitor_AO.png
+  artifactKey: Guid(8237757da6c840b448e2c6906925615c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Monitor_AO.png using Guid(8237757da6c840b448e2c6906925615c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9da86701967e9fc8e80e9562b234f8') in 0.016963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File02_Roughness.png
+  artifactKey: Guid(26ecab3b188f63d47a0a092b227f38b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File02_Roughness.png using Guid(26ecab3b188f63d47a0a092b227f38b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b3b546d41dfacd581afb024a0e8ee7') in 0.013522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf01_Roughness.png
+  artifactKey: Guid(77f0ec40713cb1c4581621c3a3a3fdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf01_Roughness.png using Guid(77f0ec40713cb1c4581621c3a3a3fdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaa78038271fab33db9f66e70ddc068') in 0.013691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stack_BaseColor.png
+  artifactKey: Guid(d7db1080b4a06f6478f2033b2db2f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stack_BaseColor.png using Guid(d7db1080b4a06f6478f2033b2db2f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa10cb8f43dc60457b9c8dfa28cb525c') in 0.012471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Drawer_BaseColor.png
+  artifactKey: Guid(0395752a182bac74aae8bbd4f95c481c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Drawer_BaseColor.png using Guid(0395752a182bac74aae8bbd4f95c481c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785c2c10804c971ccd9dc684a0d1fdad') in 0.014660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stand_Metallic.png
+  artifactKey: Guid(abb99f39e23fc96469aef4d69b26a56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stand_Metallic.png using Guid(abb99f39e23fc96469aef4d69b26a56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4248fc5322bedad41f975030b65f3847') in 0.012307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_AO.png
+  artifactKey: Guid(a93c415f987fad54595b0f9708ebcc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_AO.png using Guid(a93c415f987fad54595b0f9708ebcc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bee483d44190e9b49ac30b70bf4a9f1') in 0.012719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PinBoard_Roughness.png
+  artifactKey: Guid(7877ddfcce31b1f4a939affcd643658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PinBoard_Roughness.png using Guid(7877ddfcce31b1f4a939affcd643658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656d0ea58a5344e27abab06c2445e49c') in 0.011448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PC_BaseColor.jpeg
+  artifactKey: Guid(9f88a7ea42fe3464a8d7812e4f5a5751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PC_BaseColor.jpeg using Guid(9f88a7ea42fe3464a8d7812e4f5a5751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e024997b2af212d8dfaeb43bcf2fb830') in 0.020582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PinBoard_BaseColor.png
+  artifactKey: Guid(a6b762fed63df9649b64050b7c0d3656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/PinBoard_BaseColor.png using Guid(a6b762fed63df9649b64050b7c0d3656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc25270bc12a92f98dfd9cfc41dac1a') in 0.016657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File03_Roughness.png
+  artifactKey: Guid(3ee8e35e54bc4c04c81ede2c9621d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File03_Roughness.png using Guid(3ee8e35e54bc4c04c81ede2c9621d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22080cb6a8ce9878832b2fe2ba4cb97c') in 0.013583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Storage_Roughness.png
+  artifactKey: Guid(5c86ab45adc7ec84db9bc20a77635982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Storage_Roughness.png using Guid(5c86ab45adc7ec84db9bc20a77635982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a9032f21b6faf0595fe41c9c6092c3') in 0.012977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_Metallic.png
+  artifactKey: Guid(2802207f9504dc54797b5ddb51a005c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_Metallic.png using Guid(2802207f9504dc54797b5ddb51a005c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4d87ad81eeb8a0199a8131ef61f88f') in 0.012088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Big_Bottle_Roughness.png
+  artifactKey: Guid(79b9d4f089fe79c4eb75557a610c2cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Big_Bottle_Roughness.png using Guid(79b9d4f089fe79c4eb75557a610c2cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a65e62334e5d1efcbb8de9f0b7362b') in 0.013130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Storage_Metallic.png
+  artifactKey: Guid(d1766c60ec3bb9e42999a31b31c871a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Storage_Metallic.png using Guid(d1766c60ec3bb9e42999a31b31c871a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269032a02cd5ea63dd98b0cc3e1de0ad') in 0.014613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_Roughness.png
+  artifactKey: Guid(348d64efa76a2ad4f979e060cbd6adea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_Roughness.png using Guid(348d64efa76a2ad4f979e060cbd6adea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36219369bc18d360a693f816b647c67d') in 0.016344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Stack_BaseColor.png
+  artifactKey: Guid(dfba1b84bec98c5469d037b83d1fd655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Stack_BaseColor.png using Guid(dfba1b84bec98c5469d037b83d1fd655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef6fcd65521f058c28d4ad7c5ac680c') in 0.021823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_Normal.png
+  artifactKey: Guid(546095deb3db9064582e6b41abbff619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_Normal.png using Guid(546095deb3db9064582e6b41abbff619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7324c032d2b48f5c8c60ef7b660d962b') in 0.016347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File03_Normal.png
+  artifactKey: Guid(d0d689225464dcd4d9b19e7e6b33f0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File03_Normal.png using Guid(d0d689225464dcd4d9b19e7e6b33f0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a444c1018fbaf73e699919ab65b0a65') in 0.019532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Pencil_BaseColor.png
+  artifactKey: Guid(6e0762f1a46971942b59219cde6188c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Pencil_BaseColor.png using Guid(6e0762f1a46971942b59219cde6188c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178be5e74bfac876531654310266c408') in 0.013613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_Normal.png
+  artifactKey: Guid(39ee06ccec0fd594395d4e62064e4ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_Normal.png using Guid(39ee06ccec0fd594395d4e62064e4ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6630551b62ca4066a20c196c58ed62') in 0.016398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf01_BaseColor.png
+  artifactKey: Guid(ffa001b647884514681eff336a9c0627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Shelf01_BaseColor.png using Guid(ffa001b647884514681eff336a9c0627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984b8699113929d6498823c131acdca4') in 0.015247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_AO.png
+  artifactKey: Guid(975ba0afd6043a746b62e1c01ac23616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_AO.png using Guid(975ba0afd6043a746b62e1c01ac23616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5707979db0baf9c3523d83ccb16a3ad3') in 0.015811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_Normal.png
+  artifactKey: Guid(87238204b683a24439612cd3084d7b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Photo_Photo_Normal.png using Guid(87238204b683a24439612cd3084d7b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0195f548d08bd3d7f3bb645870115573') in 0.013618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stand_Roughness.png
+  artifactKey: Guid(d37653d1f6cd85b49b83c4295a2f39f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File_Stand_Roughness.png using Guid(d37653d1f6cd85b49b83c4295a2f39f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623d10d0cf4889cbbb88339da265a3f8') in 0.013230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_AO.png
+  artifactKey: Guid(73e9668dae35b9e47b87e623ba207874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Lamp_AO.png using Guid(73e9668dae35b9e47b87e623ba207874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f053bd4df571dd1ea507e11304cd9ccf') in 0.014980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Stack_Roughness.png
+  artifactKey: Guid(567ab00a273dda64ebc36d462a7498d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Stack_Roughness.png using Guid(567ab00a273dda64ebc36d462a7498d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aaff43c62bc13aa036f49f5338b5262') in 0.015523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Drawer_AO.png
+  artifactKey: Guid(d990f330a2a5c6e458c89df19ac225e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Drawer_AO.png using Guid(d990f330a2a5c6e458c89df19ac225e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d692ea9a0ecc2b14cc4bd2914475ef') in 0.015185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Cup_Roughness.png
+  artifactKey: Guid(75c3dd6950646db40b415c517469d547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Cup_Roughness.png using Guid(75c3dd6950646db40b415c517469d547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f777ce82631a15db6b0e8aafe93c1cdd') in 0.012839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Paper01_BaseColor.png
+  artifactKey: Guid(0beb9dea1faf27f44850972ce8d271c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Paper_Paper01_BaseColor.png using Guid(0beb9dea1faf27f44850972ce8d271c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6219ba22cc80cae5b5c09192fcee440f') in 0.012517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_AO.png
+  artifactKey: Guid(03e0952c6effc854e9bbb0a5334283e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/File01_AO.png using Guid(03e0952c6effc854e9bbb0a5334283e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1aa642aca8f2b597087edb89d83bd74') in 0.013541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_Roughness.png
+  artifactKey: Guid(3dbeaedb6a4339442aaf0dc27209c10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Cactus_Roughness.png using Guid(3dbeaedb6a4339442aaf0dc27209c10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cdc6d484da55c5ed1a67ce5e1fc4a94') in 0.015275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Box_AO.png
+  artifactKey: Guid(98d46cfc89597d449b00565fd9cd3fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Box_AO.png using Guid(98d46cfc89597d449b00565fd9cd3fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c006a91ae317567feab1f59ceae676') in 0.014041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.346474 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_AO.png
+  artifactKey: Guid(0890ddcb3a7444d4bbda2d00f8739a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_AO.png using Guid(0890ddcb3a7444d4bbda2d00f8739a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75bbe93e53bc229244ac39fcfd3bf5eb') in 0.015014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Telephone_Telephone_BaseColor.png
+  artifactKey: Guid(82fb472b3b324f246a51dbc8f9e4f6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Telephone_Telephone_BaseColor.png using Guid(82fb472b3b324f246a51dbc8f9e4f6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0760ef90e037f7d45e8eb18f9e2723a') in 0.014610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Table_BaseColor.png
+  artifactKey: Guid(974f5b2c6e3907945a953dd73d2021df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Table_BaseColor.png using Guid(974f5b2c6e3907945a953dd73d2021df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd644a3ba862146e28d493e59b2bd5da5') in 0.015546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Tape_Normal.png
+  artifactKey: Guid(ff0db735900673c48baee4763aaac520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Tape_Normal.png using Guid(ff0db735900673c48baee4763aaac520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5af9b6ee92f25103fca344ca5828da') in 0.012339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Table_Roughness.png
+  artifactKey: Guid(36590fc8cd5c4844b907626686d67d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Table_Roughness.png using Guid(36590fc8cd5c4844b907626686d67d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35d36db0946877505ee81844be926d7') in 0.015229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_Roughness.png
+  artifactKey: Guid(b16ab1676c3dcf04bb068cce9c5e130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_Roughness.png using Guid(b16ab1676c3dcf04bb068cce9c5e130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08951eeac78c309788bd4f93f52b90a3') in 0.014101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Walls_BaseColor.png
+  artifactKey: Guid(0590ae37e70de2441a7c1a101f3a78e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Walls_BaseColor.png using Guid(0590ae37e70de2441a7c1a101f3a78e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e3fcd23a6ede168c65a7a54bf63d3e') in 0.014317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_Normal.png
+  artifactKey: Guid(1d2f247901138c4418af0f40dc1e1d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Stool_Normal.png using Guid(1d2f247901138c4418af0f40dc1e1d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29808f443b0a433bd43448e735366fe7') in 0.021952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.112265 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Water_Cooler_AO.png
+  artifactKey: Guid(7e931a2d0cd4e1347b04c8c0dc975af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Water_Cooler_AO.png using Guid(7e931a2d0cd4e1347b04c8c0dc975af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406afd9f281983b202175005c2f56974') in 0.013108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Water_Cooler_Roughness.png
+  artifactKey: Guid(03d7df129d726ce4dbba9e9ade0a32d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/B_Textures/Water_Cooler_Roughness.png using Guid(03d7df129d726ce4dbba9e9ade0a32d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6152b416d98df4aa73ce22b26d0ca888') in 0.014780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.631883 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Big_Bottle1.mat
+  artifactKey: Guid(d609463823df80d47888325f8652b1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Big_Bottle1.mat using Guid(d609463823df80d47888325f8652b1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05663ed657610a86475f2014c62238a') in 0.139027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_File_Stack1.mat
+  artifactKey: Guid(fa03f0369ec3e4e4fba1ea80ba30fa80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_File_Stack1.mat using Guid(fa03f0369ec3e4e4fba1ea80ba30fa80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be33043408ca0bbec168d9d2a2957c00') in 0.015516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Cactus1.mat
+  artifactKey: Guid(1a2fa328711baa24ab243d34bd4548ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Cactus1.mat using Guid(1a2fa328711baa24ab243d34bd4548ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab2e651ec9196d256811876f1ed5403') in 0.018098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Paper_Stack1.mat
+  artifactKey: Guid(311d76c189dbfe64082ec1031527f448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Paper_Stack1.mat using Guid(311d76c189dbfe64082ec1031527f448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91196603045c687f0ad51218f8d4df7') in 0.015376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Stool1.mat
+  artifactKey: Guid(ce4113ceb240e5347a463215e5fef556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Stool1.mat using Guid(ce4113ceb240e5347a463215e5fef556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96fb9eb41f6fd2be9539e15136f81e5') in 0.031515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Paper01.mat
+  artifactKey: Guid(1a89ae41e0debbf42a438e397d523c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Paper01.mat using Guid(1a89ae41e0debbf42a438e397d523c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fa0bcd8b3276e0b70c3e55855d15df') in 0.017577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Table1.mat
+  artifactKey: Guid(3eeb48957d4dffc46b3f7da37c824fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Table1.mat using Guid(3eeb48957d4dffc46b3f7da37c824fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a75c7cb31a64e92535c22a0ba396113') in 0.026094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Box1.mat
+  artifactKey: Guid(95c01f838b47e69458c64ba04f24756c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Box1.mat using Guid(95c01f838b47e69458c64ba04f24756c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b4b6bd79bef67047609d5bd66df7af') in 0.019309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Keyboard1.mat
+  artifactKey: Guid(af6056bebdc9b0b44871bb5c30fbb9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_Keyboard1.mat using Guid(af6056bebdc9b0b44871bb5c30fbb9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11c5b8ff5a62568bbd756c87eb35bd9') in 0.021746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Tape1.mat
+  artifactKey: Guid(56d5349c028f5764b93c30120ae748cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Tape1.mat using Guid(56d5349c028f5764b93c30120ae748cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f74775830cce5ee16558edbb24b8a1') in 0.015843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_File01.mat
+  artifactKey: Guid(de5a152ca9293df4cb3b191afdb0d710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/M_File01.mat using Guid(de5a152ca9293df4cb3b191afdb0d710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b62d0db87bc0ff4ab114e6e8580bf5') in 0.019688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Water_Cooler1.mat
+  artifactKey: Guid(fbb6041904ca35c4e93a44bdb63058a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/A_Dreamer/Scene_3/C_Materials/Water_Cooler1.mat using Guid(fbb6041904ca35c4e93a44bdb63058a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ca510edda0e2273c3c57e82bb81a21') in 0.030925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 181.751112 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Box_350x250x200_Prefab.prefab
+  artifactKey: Guid(7b846d8f536f007498c941069487ce81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Box_350x250x200_Prefab.prefab using Guid(7b846d8f536f007498c941069487ce81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5277f42ed37f3261ef8d3fd9e4c6e91') in 0.023724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007697 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Box_350x250x300_Prefab.prefab
+  artifactKey: Guid(687dbafc2b84b2846b9a4a7a7dae2a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Box_350x250x300_Prefab.prefab using Guid(687dbafc2b84b2846b9a4a7a7dae2a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ce899d3b618db299762d5f0355264f') in 0.023612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Structure_Prefab.prefab
+  artifactKey: Guid(79e624e6a8770a946afb866fd94b394b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Structure_Prefab.prefab using Guid(79e624e6a8770a946afb866fd94b394b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2ea8077e0208b21e5ab8585174e07b') in 0.018205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Wall_Prefab.prefab
+  artifactKey: Guid(9eb847ab97b24024588682c8601254cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Wall_Prefab.prefab using Guid(9eb847ab97b24024588682c8601254cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f48f4bebe7ac2d8fbaf763886311327') in 0.018525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Tunnel_Prefab.prefab
+  artifactKey: Guid(e5d7b87d422ee0f478ee09eb32e24f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dreamer_A/Assets/Environment/Prefabs/Tunnel_Prefab.prefab using Guid(e5d7b87d422ee0f478ee09eb32e24f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da40f8d15879378fec50326195e36e82') in 0.019815 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
