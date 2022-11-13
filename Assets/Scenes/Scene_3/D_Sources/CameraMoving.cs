@@ -51,9 +51,11 @@ public class CameraMoving : MonoBehaviour
 
     void Update()
     {
+        if (GameState.isPaused)
+            return;
+
         if (draggable && checkCameraLoc() && Input.GetMouseButton(0))
         {
-            
             y = Input.GetAxis("Mouse X");
             x = Input.GetAxis("Mouse Y");
             rotateValue = new Vector3(x * cameraDragspeed, y * -cameraDragspeed, 0);
@@ -63,11 +65,8 @@ public class CameraMoving : MonoBehaviour
             temp[1] = Mathf.Clamp(temp[1], 14, 88);
 
             transform.eulerAngles = temp;
-
             
-            //Camera.main.transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * cameraDragspeed, 0), Space.World);
             originCameraRotation = Camera.main.transform.eulerAngles;
-            Debug.Log(originCameraRotation);
         }
         else if (!draggable || !checkCameraLoc())
         {

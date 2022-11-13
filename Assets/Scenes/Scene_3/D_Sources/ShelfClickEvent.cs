@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ShelfClickEvent : MonoBehaviour
+public class ShelfClickEvent : MonoBehaviour, IPointerDownHandler
 {
     private bool st;
     private float speed = 0.1f;
@@ -21,8 +22,11 @@ public class ShelfClickEvent : MonoBehaviour
     }
 
 
-    public void OnMouseDown()
+    public void OnPointerDown(PointerEventData eventData)
     {
+        if (GameState.isPaused)
+            return;
+
         if (st)
         {
             objectLocation = defaultLocation + direction;

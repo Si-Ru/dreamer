@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ButtonClickEvent : MonoBehaviour
 {
@@ -12,12 +13,15 @@ public class ButtonClickEvent : MonoBehaviour
     public void openBar(){
         gameObject.SetActive(true);
         open_button.SetActive(false);
+
+        GameState.isPaused = true;
     }
     
     public void closeBar(){
         gameObject.SetActive(false);
         open_button.SetActive(true);
 
+        GameState.isPaused = false;
     }
 
     // Start is called before the first frame update

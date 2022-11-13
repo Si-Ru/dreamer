@@ -2,20 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 class GameState {
 
     public static int progress;
-    public static string currentObj;
 
-
-
-    
-
-
-
-
-
-
-
+    //TODO: º¯¼ö¸í °í¹Î
+    public static bool isPaused;
 }
