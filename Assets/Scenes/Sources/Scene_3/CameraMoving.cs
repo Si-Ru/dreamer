@@ -5,17 +5,15 @@ using UnityEngine;
 
 public class CameraMoving : MonoBehaviour
 {
+    private static Vector3 TARGET_CAMERA_POSITION;
+    private static Vector3 TARGET_CAMERA_ROTATION;
+    private static Vector3 ORIGIN_CAMERA_POSITION;
+    private static Vector3 ORIGIN_CAMERA_ROTATION;
+
+    private static bool DRAGGABLE;
+
     private float cameraDragspeed = -3.5f;
     private float cameraMoveSpeed = 0.1f;
-
-    private static bool draggable;
-    private static Vector3 targetCameraPosition;
-    private static Vector3 targetCameraRotation;
-    private static Vector3 originCameraPosition;
-    private static Vector3 originCameraRotation;
-
-    private static Vector3 temp;
-
 
     private float x;
     private float y;
@@ -23,55 +21,55 @@ public class CameraMoving : MonoBehaviour
 
     public static void fixCameraLoc(Vector3 targetCameraPos, Vector3 targetCameraRot)
     {
-        draggable = false;
-        targetCameraPosition = targetCameraPos;
-        targetCameraRotation = targetCameraRot;
+        DRAGGABLE = false;
+        TARGET_CAMERA_POSITION = targetCameraPos;
+        TARGET_CAMERA_ROTATION = targetCameraRot;
     }
 
     public static void freeCameraLoc()
     {
-        draggable = true;
-        targetCameraPosition = originCameraPosition;
-        targetCameraRotation = originCameraRotation;
+        DRAGGABLE = true;
+        TARGET_CAMERA_POSITION = ORIGIN_CAMERA_POSITION;
+        TARGET_CAMERA_ROTATION = ORIGIN_CAMERA_ROTATION;
     }
 
     void Start() {
-        draggable = true;
-        originCameraPosition = Camera.main.transform.position;
-        originCameraRotation = Camera.main.transform.eulerAngles;
+        DRAGGABLE = true;
+        ORIGIN_CAMERA_POSITION = Camera.main.transform.position;
+        ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
 
-        targetCameraPosition = Camera.main.transform.position;
-        targetCameraRotation = Camera.main.transform.eulerAngles;
+        TARGET_CAMERA_POSITION = Camera.main.transform.position;
+        TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
     }
 
     bool checkCameraLoc()
     {
-        return originCameraPosition == Camera.main.transform.position && originCameraRotation == Camera.main.transform.eulerAngles;
+        return ORIGIN_CAMERA_POSITION == Camera.main.transform.position && ORIGIN_CAMERA_ROTATION == Camera.main.transform.eulerAngles;
     }
 
     void Update()
     {
-        if (GameState.isPaused)
+        if (GameState.IS_PAUSED)
             return;
 
-        if (draggable && checkCameraLoc() && Input.GetMouseButton(0))
+        if (DRAGGABLE && checkCameraLoc() && Input.GetMouseButton(0))
         {
             y = Input.GetAxis("Mouse X");
             x = Input.GetAxis("Mouse Y");
             rotateValue = new Vector3(x * cameraDragspeed, y * -cameraDragspeed, 0);
 
-            temp = transform.eulerAngles - rotateValue;
-            temp[0] = Mathf.Clamp(temp[0], 1, 28);
-            temp[1] = Mathf.Clamp(temp[1], 14, 88);
+            Vector3 _temp = transform.eulerAngles - rotateValue;
+            _temp[0] = Mathf.Clamp(_temp[0], 1, 28);
+            _temp[1] = Mathf.Clamp(_temp[1], 14, 88);
 
-            transform.eulerAngles = temp;
+            transform.eulerAngles = _temp;
             
-            originCameraRotation = Camera.main.transform.eulerAngles;
+            ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
         }
-        else if (!draggable || !checkCameraLoc())
+        else if (!DRAGGABLE || !checkCameraLoc())
         {
-            Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, targetCameraPosition, cameraMoveSpeed);
-            Camera.main.transform.eulerAngles = Vector3.MoveTowards(Camera.main.transform.eulerAngles, targetCameraRotation, 8 * cameraMoveSpeed);
+            Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, TARGET_CAMERA_POSITION, cameraMoveSpeed);
+            Camera.main.transform.eulerAngles = Vector3.MoveTowards(Camera.main.transform.eulerAngles, TARGET_CAMERA_ROTATION, 8 * cameraMoveSpeed);
         }
     }
 }

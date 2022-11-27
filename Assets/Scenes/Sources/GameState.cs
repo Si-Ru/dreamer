@@ -4,8 +4,12 @@ using UnityEngine;
 
 class GameState {
 
+    public static int DAY;
+    public static int DREAM_DAY;
+
+    
     public static int progress;
 
     //TODO: º¯¼ö¸í °í¹Î
-    public static bool isPaused;
+    public static bool IS_PAUSED;
 }
