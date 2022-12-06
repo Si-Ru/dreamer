@@ -393,7 +393,12 @@
     "script": [
       {
         "narrator": "system",
-        "text": "컴퓨터로 고객 명단 후보를 조사합니다. \n 조사한 후보들 중 일정 수 만큼 선택하여 명단을 작성합니다.",
+        "text": "컴퓨터로 고객 명단 후보를 조사합니다. \n 조사한 결과를 통해 고객 후보들의 정보를 확인할 수 있습니다.",
+        "narratorImage": "system.jpg"
+      },
+      {
+        "narrator": "system",
+        "text": "조사한 후보들 중 일정 수 만큼 선택하여 명단을 작성합니다.",
         "narratorImage": "system.jpg"
       },
       {
@@ -413,23 +418,8 @@
       },
       {
         "narrator": "system",
-        "text": "조사한 결과를 통해 고객 후보들의 정보를 확인할 수 있습니다.",
-        "narratorImage": "system.jpg"
-      },
-      {
-        "narrator": "system",
         "text": "고객 특성과 난이도 등을 파악하여 최적의 명단을 구성해보세요.",
         "narratorImage": "system.jpg"
-      }
-    ],
-    "nextStep": "day2_office_tutorial_3"
-  },
-  "day2_office_tutorial_3": {
-    "script": [
-      {
-        "narrator": "player",
-        "text": "(이쯤이면 된 것 같은데)",
-        "narratorImage": "playerImage.jpg"
       }
     ],
     "nextStep": ""

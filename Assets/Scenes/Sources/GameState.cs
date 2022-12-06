@@ -8,8 +8,9 @@ class GameState {
     public static int DREAM_DAY;
     public static int progress;
 
-    public static string SCRIPT_KEY;
+    public static string SCRIPT_KEY = "day1_dream";
 
-    //TODO: º¯¼ö¸í °í¹Î
+    //TODO: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public static bool IS_PAUSED;
+    public static bool IS_POPPED_UP;
 }
