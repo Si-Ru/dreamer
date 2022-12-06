@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
+using System.Text;
+using System.IO;
+using Newtonsoft.Json;
 
 
 public class CameraMoving : MonoBehaviour
@@ -18,6 +23,11 @@ public class CameraMoving : MonoBehaviour
     private float x;
     private float y;
     private Vector3 rotateValue;
+
+    // 
+    private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    public static Dictionary<string, ScriptFile> SuperScript = null;
+    //
 
     public static void fixCameraLoc(Vector3 targetCameraPos, Vector3 targetCameraRot)
     {
@@ -43,6 +53,18 @@ public class CameraMoving : MonoBehaviour
 
         TARGET_CAMERA_POSITION = Camera.main.transform.position;
         TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
+
+        //Script 받아오기.
+
+        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+        byte[] data = new byte[fileStream.Length];
+        fileStream.Read(data, 0, data.Length);
+        fileStream.Close();
+        string jsonString = Encoding.UTF8.GetString(data);
+        SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
+
+
+
     }
 
     bool checkCameraLoc()

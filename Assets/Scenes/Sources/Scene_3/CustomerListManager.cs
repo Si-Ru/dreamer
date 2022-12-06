@@ -14,6 +14,7 @@ public class CustomerListManager : MonoBehaviour
     private int selectedNumber;
     private int[] isSelected;
     private Customer[] customerList;
+    public GameObject chattingBar;
 
     public void OnButtonClick(Button btn)
     {
@@ -72,7 +73,11 @@ public class CustomerListManager : MonoBehaviour
                     customerList[j++] = customerListMaker.customers[i];
                 }
             }
+            
             customerListMakerPopup.SetActive(false);
+            if(GameState.SCRIPT_KEY=="day2_office_tutorial_2"){
+                chattingBar.SetActive(true);
+            }
         }
     }
 

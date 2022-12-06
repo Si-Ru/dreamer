@@ -12,27 +12,50 @@ public class OfficeChattingBar : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI Text;
 
-    private string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    public GameObject scriptSkipButton;
 
-    public Dictionary<string, ScriptFile> SuperScript = null;
+    private int textNum = 0;
+
+
+    public void scriptSkip(){
+
+        int _currentScriptListLength = CameraMoving.SuperScript[GameState.SCRIPT_KEY].script.Count;
+
+        if(textNum < _currentScriptListLength - 1){
+            textNum = textNum + 1;
+        }
+        else{
+            GameState.SCRIPT_KEY = CameraMoving.SuperScript[GameState.SCRIPT_KEY].nextStep;
+            gameObject.SetActive(false);
+            textNum = 0;
+        }
+
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        string startScript = "day1_dream";
-        // read file stream
-        FileStream fileStream = new FileStream(fileName, FileMode.Open);
-        byte[] data = new byte[fileStream.Length];
-        fileStream.Read(data, 0, data.Length);
-        fileStream.Close();
-        string jsonString = Encoding.UTF8.GetString(data);
-        SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
+    
+
+        GameState.SCRIPT_KEY = "day2_office_tutorial_0";
+
+
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if(SuperScript != null)
-            Text.text = SuperScript["day1_dream"].script[0].text;
+        
+        if(gameObject.activeSelf == true){
+            GameState.IS_PAUSED = true;
+        }
+        else{
+            GameState.IS_PAUSED = false;
+        }
+
+        if(CameraMoving.SuperScript != null)
+            Text.text = CameraMoving.SuperScript[GameState.SCRIPT_KEY].script[textNum].text;
     }
 }
