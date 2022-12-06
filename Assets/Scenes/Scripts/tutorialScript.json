@@ -1,0 +1,471 @@
+{
+    
+        "day1_dream": {
+            "script": [
+                {
+                    "narrator": "",
+                    "text": "올해의 우수 사원 player",
+                    "narratorImage": ""
+                }
+            ],
+            "nextStep": "day1_bedroom_wakeup"
+        },
+
+        "day1_bedroom_wakeup": {
+            "script": [
+                {
+                    "narrator": "player",
+                    "text": "(뭐야..꿈이었구나..)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(나도 언젠가는 올해의 최우수 사원이 될 수 있겠지?)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(오늘도 열심히 팔아보자.)",
+                    "narratorImage": "playerImage.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_0"
+        },
+
+        "day1_office_tutorial_0": {
+            "script": [
+                {
+                    "narrator": "직원1",
+                    "text": "player씨~ 과장님께서 오늘 명단 뽑아주셨어요.",
+                    "narratorImage": "[직원]Image.jpg"
+                },
+                {
+                    "narrator": "직원1",
+                    "text": "오늘은 여기 있는 고객분들한테 전화하시면 됩니다.",
+                    "narratorImage": "[직원]Image.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "넵.",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(2명밖에 없네. 일단 전화를 걸어보자.)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "전화기를 클릭하세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_customerList1"
+        },
+
+        "day1_office_customerList1": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "고객 명단을 통해 고객에 대한 간단한 정보를 확인할 수 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "고객의 성향과 설득 난이도에 유의하세요!",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "명단에 있는 해당 고객을 선택해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_1.0"
+        },
+
+        "day1_office_tutorial_1.0": {
+            "script": [
+                {
+                    "narrator": "customer1",
+                    "text": "여보세요?",
+                    "narratorImage": "customer1Image.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "보이는 것들에 대한 설명을 해드리겠습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "~~는 고객 설득 게이지입니다. 고객을 설득할 때마다 게이지가 상승합니다. \n 게이지가 가득 찰 시, 물품을 판매할 수 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "~~는 고객 피로도 게이지입니다. 고객과 대화할 때마다 게이지가 상승합니다. \n 물품을 판매하기 전에 게이지가 가득 찰 시, 고객이 전화를 끊어버리니 조심하세요!!",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "~~는 현재 대화 흐름 상 적절한 설득의 방법을 의미합니다. 대화의 흐름에 맞는 말을 꺼내보세요.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "~~는 현재 대화 중인 고객의 성향입니다. 해당 유형의 말로 설득에 성공할 시, 설득 게이지가 더 빠르게 상승합니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "~~는 현재 선택할 수 있는 대화 커맨드입니다. 대화 흐름과 고객 성향에 맞는 커맨드를 선택해 설득에 성공하세요!",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 커맨드를 선택해보세요. 대화 흐름에 맞는 말을 한다면 설득에 성공하게 됩니다.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_1.1"
+        },
+
+        "day1_office_tutorial_1.1": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "지금은 흐름에 맞는 선택지가 없는 것 같네요. 해당 커맨드를 선택해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_1.2"
+        },
+
+
+
+        "day1_office_tutorial_1.2": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "상대방이 흐름에 맞는 말을 한다면 설득에 실패하게 됩니다. 주의하세요.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 커맨드를 선택해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_1.3"
+        },
+
+
+        "day1_office_tutorial_1.3": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "둘 다 흐름에 맞는 말을 하거나 둘 다 흐름에 맞지 않는 말을 하게 되면 커맨드 pow에 따라 피로도와 설득 게이지가 소폭 상승합니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 커맨드를 선택해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_1.4"
+        },
+
+        "day1_office_tutorial_1.4": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "고객 성향에 맞는 종류의 말로 설득에 성공하게 된다면 설득 게이지가 대폭 상승합니다.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_sellingSuccess"
+        },
+
+        "day1_office_sellingSuccess": {
+            "script": [
+                {
+                    "narrator": "customer1",
+                    "text": "그럼 일단 하나 주문해보겠습니다.",
+                    "narratorImage": "customer1Image.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(좋았어. 다음 사람에게 또 전화해볼까?)",
+                    "narratorImage": "playerImage.jpg"
+                }
+            ],
+            "nextStep": "day1_office_customerList2"
+        },
+        "day1_office_customerList2":{
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "다른 고객을 선택해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_office_tutorial_2.0"
+        },
+        "day1_office_tutorial_2.0":{
+            "script": [
+                {
+                    "narrator": "customer2",
+                    "text": "여보세요.",
+                    "narratorImage": "customer2Image.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "안녕하세요. 어디어디 제약회사입니다. 혹시 최근에 무릎이..",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "customer2",
+                    "text": "(뚝)",
+                    "narratorImage": "customer2Image.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(이런... 들어보지도 않고...)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "난이도가 높은 고객은 일정 이상 능력치를 가지고 있지 않으면 설득 시도가 불가능합니다. \n 고객의 난이도에 유의하세요!",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "하루에는 정해진 수의 사람에게만 전화가 가능합니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(오늘은 이만 집에 가볼까.)",
+                    "narratorImage": "playerImage.jpg"
+                }
+
+
+            ],
+            "nextStep": "day1_home"
+        },
+        "day1_home": {
+            "script": [
+                {
+                    "narrator": "girlfriend",
+                    "text": "오늘도 수고 많았어~",
+                    "narratorImage": "girlfriendImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(여자친구를 보면 항상 힘이 난다.)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "고마워. 많이 기다렸어?",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "girlfriend",
+                    "text": "아니야. 어서 밥 먹자.",
+                    "narratorImage": "girlfriendImage.jpg"
+                }
+            ],
+            "nextStep": "day1_bedroom_levelUp0"
+        },
+
+        "day1_bedroom_levelUp0":{
+            "script": [
+                {
+                    "narrator": "player",
+                    "text": "(오늘도 보람찬 하루였다.)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(그나저나 어떻게 하면 더 설득을 잘 할 수 있을지 생각을 좀 해볼까?)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "좌측 하단의 profile 버튼을 눌러보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_bedroom_levelUp1"
+        },
+
+        "day1_bedroom_levelUp1":{
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "저녁에 퇴근 후 집에 오면 본인의 능력치를 발전시킬 수 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 능력치를 발전 시켜보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_bedroom_levelUp2"
+        },
+        "day1_bedroom_levelUp2":{
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "해당 능력치 상승으로 인해 하루에 전화할 수 있는 고객의 수가 증가했습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "하루에 더 많은 고객에게 판매를 할 수 있다는 건 곧 실적과 연결되어 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 능력치를 발전 시켜보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day1_bedroom_levelUp3"
+        },
+        "day1_bedroom_levelUp3":{
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "해당 능력치는 선택 가능한 커맨드 선택지의 수량과 연관된 능력치입니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "더 많은 선택지를 보유하여 대화를 유리하게 이끌어 나갈 수 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "(좋았어. 내일은 더 잘 할 수 있을 것 같은데.)",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day2_dream"
+        },
+        "day2_dream": {
+            "script": [
+                {
+                    "narrator": "player",
+                    "text": "이건 꼭 사셔야 합니다. 고객님께 정말 필요한 제품이에요.",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "unknown",
+                    "text": "...",
+                    "narratorImage": "questionMark.jpg"
+                }
+            ],
+            "nextStep": "day2_bedroom_wakeup"
+        },
+
+        "day2_bedroom_wakeup": {
+            "script": [
+                {
+                    "narrator": "player",
+                    "text": "(으음.. 무슨 꿈이었지...)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(누구한테 뭔가를 팔고 있었던 것 같은데.. 기억이 잘 나지 않네.)",
+                    "narratorImage": "playerImage.jpg"
+                },
+                {
+                    "narrator": "player",
+                    "text": "(일단 오늘도 화이팅 해볼까.)",
+                    "narratorImage": "playerImage.jpg"
+                }
+            ],
+            "nextStep": "day2_office_tutorial_0"
+        },
+
+        "day2_office_tutorial_0": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "오늘은 직접 고객 명단을 작성해 보세요.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "컴퓨터를 클릭해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day2_office_tutorial_1"
+        },
+
+        "day2_office_tutorial_1": {
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "컴퓨터로 고객 명단 후보를 조사합니다. \n 조사한 후보들 중 일정 수 만큼 선택하여 명단을 작성합니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "해당 후보를 선택해 보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day2_office_tutorial_2"
+        },
+        "day2_office_tutorial_2":{
+            "script": [
+                {
+                    "narrator": "system",
+                    "text": "명단 제한 수량을 늘리거나 더 많은 후보들을 보고 싶다면 조사 기술 능력치를 올리세요.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "조사한 결과를 통해 고객 후보들의 정보를 확인할 수 있습니다.",
+                    "narratorImage": "system.jpg"
+                },
+                {
+                    "narrator": "system",
+                    "text": "고객 특성과 난이도 등을 파악하여 최적의 명단을 구성해보세요.",
+                    "narratorImage": "system.jpg"
+                }
+            ],
+            "nextStep": "day2_office_tutorial_3"
+        },
+
+        "day2_office_tutorial_3":{
+            "script": [
+                {
+                    "narrator": "player",
+                    "text": "(이쯤이면 된 것 같은데)",
+                    "narratorImage": "playerImage.jpg"
+                }
+            ],
+            "nextStep": ""
+        }
+
+
+        
+
+    }
+        
+        
+        
+        
+        
+
+    
+
+

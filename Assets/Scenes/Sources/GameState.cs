@@ -6,7 +6,6 @@ class GameState {
 
     public static int DAY;
     public static int DREAM_DAY;
-
     
     public static int progress;
 
