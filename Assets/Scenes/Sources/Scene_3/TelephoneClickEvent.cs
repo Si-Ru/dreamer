@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TelephoneClickEvent : MonoBehaviour
+public class TelephoneClickEvent : MonoBehaviour, IPointerDownHandler
 {
     bool isPopup = false;
 

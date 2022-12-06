@@ -22,7 +22,7 @@ public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
         if (isPopup || GameState.DAY == 1) return;
 
         isPopup = true;
-        //popup â ����
+
         customerListUI.SetActive(true);
         customerListMakerPopup.SetActive(true);
 
