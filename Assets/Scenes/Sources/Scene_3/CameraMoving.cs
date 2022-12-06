@@ -29,12 +29,15 @@ public class CameraMoving : MonoBehaviour
     public static void freeCameraLoc()
     {
         DRAGGABLE = true;
+        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
+        DRAGGABLE = false;
         TARGET_CAMERA_POSITION = ORIGIN_CAMERA_POSITION;
         TARGET_CAMERA_ROTATION = ORIGIN_CAMERA_ROTATION;
     }
 
     void Start() {
-        DRAGGABLE = true;
+        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
+        DRAGGABLE = false;
         ORIGIN_CAMERA_POSITION = Camera.main.transform.position;
         ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
 

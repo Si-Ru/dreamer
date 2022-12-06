@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
+public class TelephoneClickEvent : MonoBehaviour
 {
     bool isPopup = false;
 
     public GameObject customerListUI;
-    public GameObject customerListMakerPopup;
+    public GameObject customerListPopup;
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (isPopup || GameState.DAY == 1) return;
+        if (isPopup) return;
 
         isPopup = true;
         //popup Ã¢ ¶ç¿ì±â
         customerListUI.SetActive(true);
-        customerListMakerPopup.SetActive(true);
+        customerListPopup.SetActive(true);
     }
 
     // Update is called once per frame

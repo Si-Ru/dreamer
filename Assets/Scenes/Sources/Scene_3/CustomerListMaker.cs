@@ -11,11 +11,11 @@ public class CustomerListMaker
         customers = new Customer[totalCustomerCnt];
         if (GameState.DAY == 2)
         {
-            customers[0] = new Customer("유안나", "여", "010-xxx-xxxx", 0, 1, 100, 3, "Character_Female1");
-            customers[1] = new Customer("박현진", "여", "010-xxx-xxxx", 0, 2, 100, 3, "Character_Female6");
-            customers[2] = new Customer("김진수", "남", "010-xxx-xxxx", 1, 1, 100, 3, "Character_Male1");
-            customers[3] = new Customer("강성립", "남", "010-xxx-xxxx", 1, 2, 100, 3, "Character_Male4");
-            customers[4] = new Customer("고영희", "여", "010-xxx-xxxx", 2, 3, 100, 3, "Character_Female7");
+            customers[0] = new Customer("유안나", "여", "010-xxx-xxxx", 0, 1, 100, 3, "Character/Face/Character_Female1");
+            customers[1] = new Customer("박현진", "여", "010-xxx-xxxx", 0, 2, 100, 3, "Character/Face/Character_Female6");
+            customers[2] = new Customer("김진수", "남", "010-xxx-xxxx", 1, 1, 100, 3, "Character/Face/Character_Male1");
+            customers[3] = new Customer("강성립", "남", "010-xxx-xxxx", 1, 2, 100, 3, "Character/Face/Character_Male4");
+            customers[4] = new Customer("고영희", "여", "010-xxx-xxxx", 2, 3, 100, 3, "Character/Face/Character_Female7");
         }
         else
         {
