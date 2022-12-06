@@ -3685,7 +3685,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 913083496}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomerClickEvent, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
@@ -4701,7 +4701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 913083491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b87bd5fc1e01414f9385361f7e1bf83, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f7b761b20d68b748ab7c64a5d997137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &938907581
