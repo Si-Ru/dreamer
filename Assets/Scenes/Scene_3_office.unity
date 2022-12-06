@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 72736360}
   - component: {fileID: 72736359}
   m_Layer: 0
-  m_Name: Button
+  m_Name: CustomerSaveBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +464,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 72736360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
+        m_MethodName: SaveCurrentSelectedCustomer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &72736360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2864,7 +2876,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 602215358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 602215357}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &602215358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,13 +3709,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomerClickEvent, Assembly-CSharp
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
         m_MethodName: OnButtonClick
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 735562736}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4609,7 +4633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &913083492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4704,6 +4728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7b761b20d68b748ab7c64a5d997137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedNumberText: {fileID: 493393462}
+  customerListMakerPopup: {fileID: 853655858}
 --- !u!1 &938907581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,7 +6522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1237279665}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1237279664}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237279665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6830,7 +6868,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1296257424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1296257423}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1296257424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7332,7 +7382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1349185791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 913083496}
+        m_TargetAssemblyTypeName: CustomerListManager, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1349185790}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1349185791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7834,6 +7896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerListUI: {fileID: 913083491}
+  customerListMakerPopup: {fileID: 853655858}
 --- !u!64 &1482996538
 MeshCollider:
   m_ObjectHideFlags: 0

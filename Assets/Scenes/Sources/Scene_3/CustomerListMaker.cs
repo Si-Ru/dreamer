@@ -8,7 +8,6 @@ public class CustomerListMaker
 
         totalCustomerCnt = player.searchPow;
         enableCustomerCnt = player.customerCnt;
-
         customers = new Customer[totalCustomerCnt];
         if (GameState.DAY == 2)
         {
@@ -29,9 +28,6 @@ public class CustomerListMaker
     }
 
     private Player player;
-
-    private static int FEMALE_IMAGE_CNT = 10;
-    private static int MALE_IMAGE_CNT = 10;
 
     public int totalCustomerCnt;
     public int enableCustomerCnt;

@@ -9,6 +9,7 @@ public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
     bool isPopup = false;
 
     public GameObject customerListUI;
+    public GameObject customerListMakerPopup;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
         isPopup = true;
         //popup Ã¢ ¶ç¿ì±â
         customerListUI.SetActive(true);
+        customerListMakerPopup.SetActive(true);
     }
 
     // Update is called once per frame
