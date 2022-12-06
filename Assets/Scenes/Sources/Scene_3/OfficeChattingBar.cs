@@ -2,51 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Text.Json;
 using System;
+using System.Text;
 using System.IO;
+using Newtonsoft.Json;
 using TMPro;
-
-public class ScriptClass{
-    public Dictionary<string, Script> SuperScript;
-
-    public string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
-
-
-    public ScriptClass(){
-
-        string jsonString = File.ReadAllText(fileName);
-
-        print(jsonString);
-
-        SuperScript = JsonUtility.FromJson< Dictionary<string, Script> >(jsonString);
-
-
-        //SuperScript = JsonSerializer.Deserialize< Dictionary<string, Script> >(jsonString);
-    }
-
-    
-}
 
 public class OfficeChattingBar : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI Text;
 
+    private string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
 
-
-    public ScriptClass script = null;
+    public Dictionary<string, ScriptFile> SuperScript = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        script = new ScriptClass();
-        
+        string startScript = "day1_dream";
+        // read file stream
+        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+        byte[] data = new byte[fileStream.Length];
+        fileStream.Read(data, 0, data.Length);
+        fileStream.Close();
+        string jsonString = Encoding.UTF8.GetString(data);
+        SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if(script != null)
-            Text.text = script.SuperScript["day1_dream"].script[0].text;
+        if(SuperScript != null)
+            Text.text = SuperScript["day1_dream"].script[0].text;
     }
 }

@@ -4,16 +4,12 @@ using UnityEngine;
 using System.Text.Json;
 
 
-public class SubScript{
+public class SubScriptFile{
     public string narrator;
     public string text;
     public string narrator_image;
 }
 
-public class Script{
-    public IList<SubScript> script;
-    public string nextStep;
-}
 
 
 /*
