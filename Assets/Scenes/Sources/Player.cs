@@ -12,7 +12,7 @@ public class Player
             player.pathosPow = 10;
             player.health = 100;
             player.inventory = 3;
-            player.customerCnt = 3;
+            player.customerCnt = 2;
             player.searchPow = 5;
         }
 

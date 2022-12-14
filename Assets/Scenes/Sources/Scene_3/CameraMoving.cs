@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
+using System.Text;
+using System.IO;
+using Newtonsoft.Json;
 
 
 public class CameraMoving : MonoBehaviour
@@ -19,6 +24,11 @@ public class CameraMoving : MonoBehaviour
     private float y;
     private Vector3 rotateValue;
 
+    // 
+    private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    public static Dictionary<string, ScriptFile> SuperScript = null;
+    //
+
     public static void fixCameraLoc(Vector3 targetCameraPos, Vector3 targetCameraRot)
     {
         DRAGGABLE = false;
@@ -29,17 +39,32 @@ public class CameraMoving : MonoBehaviour
     public static void freeCameraLoc()
     {
         DRAGGABLE = true;
+        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
+        DRAGGABLE = false;
         TARGET_CAMERA_POSITION = ORIGIN_CAMERA_POSITION;
         TARGET_CAMERA_ROTATION = ORIGIN_CAMERA_ROTATION;
     }
 
     void Start() {
-        DRAGGABLE = true;
+        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
+        DRAGGABLE = false;
         ORIGIN_CAMERA_POSITION = Camera.main.transform.position;
         ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
 
         TARGET_CAMERA_POSITION = Camera.main.transform.position;
         TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
+
+        //Script ë°›ì•„ì˜¤ê¸°.
+
+        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+        byte[] data = new byte[fileStream.Length];
+        fileStream.Read(data, 0, data.Length);
+        fileStream.Close();
+        string jsonString = Encoding.UTF8.GetString(data);
+        SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
+
+
+
     }
 
     bool checkCameraLoc()
