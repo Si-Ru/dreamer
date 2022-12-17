@@ -65,17 +65,17 @@ public class CameraMoving : MonoBehaviour
         TARGET_CAMERA_POSITION = Camera.main.transform.position;
         TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
 
-        
+        loadScript(fileName);
+    }
 
-        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+    public static void loadScript(string jsonFile)
+    {
+        FileStream fileStream = new FileStream(jsonFile, FileMode.Open);
         byte[] data = new byte[fileStream.Length];
         fileStream.Read(data, 0, data.Length);
         fileStream.Close();
         string jsonString = Encoding.UTF8.GetString(data);
         SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
-
-
-
     }
 
     bool checkCameraLoc()

@@ -32,6 +32,11 @@ public class OfficeChattingBar : MonoBehaviour
             gameObject.SetActive(false);
             GameState.IS_PAUSED = false;
             textNum = 0;
+
+            if(GameState.TUTORIAL == true && GameState.SCRIPT_KEY == "")
+            {
+                CameraMoving.loadScript("Assets/Scenes/Scripts/mainScript.json");
+            }
         }
 
     }
