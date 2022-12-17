@@ -27,8 +27,8 @@ public class CameraMoving : MonoBehaviour
     public GameObject chattingBar;
 
     // 
-    //private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
-    private static string fileName = "tutorialScript.json";
+    private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    //private static string fileName = "tutorialScript.json";
     public static Dictionary<string, ScriptFile> SuperScript = null;
     //
 
