@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Text.Json;
 
 
 public class SubScriptFile{
     public string narrator;
     public string text;
-    public string narrator_image;
+    public string narratorImage;
 }
 
 

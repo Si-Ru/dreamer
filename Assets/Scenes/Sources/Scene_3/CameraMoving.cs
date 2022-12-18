@@ -24,8 +24,11 @@ public class CameraMoving : MonoBehaviour
     private float y;
     private Vector3 rotateValue;
 
+    public GameObject chattingBar;
+
     // 
     private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    //private static string fileName = "tutorialScript.json";
     public static Dictionary<string, ScriptFile> SuperScript = null;
     //
 
@@ -46,6 +49,14 @@ public class CameraMoving : MonoBehaviour
     }
 
     void Start() {
+        
+
+        if (chattingBar.activeSelf != true)
+        {
+            chattingBar.SetActive(true);
+            GameState.IS_PAUSED = true;
+        }
+
         //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
         DRAGGABLE = false;
         ORIGIN_CAMERA_POSITION = Camera.main.transform.position;
@@ -54,17 +65,17 @@ public class CameraMoving : MonoBehaviour
         TARGET_CAMERA_POSITION = Camera.main.transform.position;
         TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
 
-        //Script ë°›ì•„ì˜¤ê¸°.
+        loadScript(fileName);
+    }
 
-        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+    public static void loadScript(string jsonFile)
+    {
+        FileStream fileStream = new FileStream(jsonFile, FileMode.Open);
         byte[] data = new byte[fileStream.Length];
         fileStream.Read(data, 0, data.Length);
         fileStream.Close();
         string jsonString = Encoding.UTF8.GetString(data);
         SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
-
-
-
     }
 
     bool checkCameraLoc()
@@ -76,6 +87,10 @@ public class CameraMoving : MonoBehaviour
     {
         if (GameState.IS_PAUSED)
             return;
+        
+        //GameState.DAY = GameState.SCRIPT_KEY[3] - '0';
+        
+        
 
         if (DRAGGABLE && checkCameraLoc() && Input.GetMouseButton(0))
         {

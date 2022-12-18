@@ -5,9 +5,6 @@ using UnityEngine.EventSystems;
 
 public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
 {
-    bool isPopup = false;
-
-
     public GameObject chattingBar;
     public GameObject customerListUI;
     public GameObject customerListMakerPopup;
@@ -15,19 +12,21 @@ public class MonitorClickEvent : MonoBehaviour, IPointerDownHandler
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (isPopup || GameState.DAY == 1) return;
+        if (GameState.IS_POPPED_UP || GameState.DAY == 1 || GameState.IS_PAUSED) return;
 
-        isPopup = true;
+        GameState.IS_POPPED_UP= true;
 
         customerListUI.SetActive(true);
         customerListMakerPopup.SetActive(true);
 
         if(GameState.SCRIPT_KEY == "day2_office_tutorial_1"){
             chattingBar.SetActive(true);
+            GameState.IS_PAUSED = true;
         }
     }
 
