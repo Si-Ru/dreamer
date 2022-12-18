@@ -88,7 +88,7 @@ public class CameraMoving : MonoBehaviour
         if (GameState.IS_PAUSED)
             return;
         
-        GameState.DAY = GameState.SCRIPT_KEY[3] - '0';
+        //GameState.DAY = GameState.SCRIPT_KEY[3] - '0';
         
         
 

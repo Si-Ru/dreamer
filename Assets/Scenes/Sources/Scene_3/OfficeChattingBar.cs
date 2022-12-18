@@ -50,7 +50,7 @@ public class OfficeChattingBar : MonoBehaviour
 
 
 
-        GameState.SCRIPT_KEY = "day1_office_tutorial_0";
+        GameState.SCRIPT_KEY = "day2_office_tutorial_2";
         //GameState.SCRIPT_KEY = "day1_office_sellingFailed";
         
 

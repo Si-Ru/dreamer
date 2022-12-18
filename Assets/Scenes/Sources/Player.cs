@@ -27,6 +27,4 @@ public class Player
     public int inventory;
     public int customerCnt;
     public int searchPow;
-
-    public int statPoint;
 }

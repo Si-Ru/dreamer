@@ -16,6 +16,7 @@ public class Customer
     }
 
     public Customer() {
+        phone = "010-xxx-xxxx";
     }
 
     public string name;

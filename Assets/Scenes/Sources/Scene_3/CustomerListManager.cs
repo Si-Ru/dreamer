@@ -8,10 +8,10 @@ using TMPro;
 
 public class CustomerListManager : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI selectedNumberText;
+    [SerializeField] TextMeshProUGUI selectedCountText;
     public GameObject customerListMakerPopup;
     public GameObject customerListPopup;
-    private int selectedNumber;
+    private int selectedCount;
     private int[] isSelected;
     private Customer[] customerList;
     public GameObject chattingBar;
@@ -26,11 +26,10 @@ public class CustomerListManager : MonoBehaviour
 
         if (Int32.TryParse(_currentBtnName.Substring(8,1), out int _currentBtnNum))
         {
-            print(_currentBtnNum);
             _currentBtnNum = _currentBtnNum - 1;
             if (isSelected[_currentBtnNum] == 0)
             {
-                if (selectedNumber == customerListMaker.enableCustomerCnt)
+                if (selectedCount == customerListMaker.enableCustomerCnt)
                     return;
 
                 var colors = btn.colors;
@@ -38,7 +37,7 @@ public class CustomerListManager : MonoBehaviour
                 colors.highlightedColor = Color.green;
                 btn.colors = colors;
                 isSelected[_currentBtnNum] = 1;
-                selectedNumber++;
+                selectedCount++;
             }
             else
             {
@@ -47,25 +46,25 @@ public class CustomerListManager : MonoBehaviour
                 colors.highlightedColor = new Color(245, 245, 245, 255);
                 btn.colors = colors;
                 isSelected[_currentBtnNum] = 0;
-                selectedNumber--;
+                selectedCount--;
             }
         }
 
-        selectedNumberText.text = String.Format("{0} / {1}", selectedNumber, customerListMaker.enableCustomerCnt);
-        if(selectedNumber == customerListMaker.enableCustomerCnt)
+        selectedCountText.text = String.Format("{0} / {1}", selectedCount, customerListMaker.enableCustomerCnt);
+        if(selectedCount == customerListMaker.enableCustomerCnt)
         {
-            selectedNumberText.color = Color.green;
+            selectedCountText.color = Color.green;
         }
         else
         {
-            selectedNumberText.color = Color.white;
+            selectedCountText.color = Color.white;
         }
     }
 
     public void SaveCurrentSelectedCustomer()
     {
         if (GameState.IS_PAUSED) return;
-        if (selectedNumber == customerListMaker.enableCustomerCnt)
+        if (selectedCount == customerListMaker.enableCustomerCnt)
         {
             int j = 0;
             for (int i = 0; i < customerListMaker.totalCustomerCnt; i++)
@@ -105,7 +104,7 @@ public class CustomerListManager : MonoBehaviour
     }
 
     private int maxCustomerList = 3;
-    private string[] characteristic = {"신뢰적","감성적","논리적"};
+    private string[] characteristic = {"신뢰적","논리적", "감성적" };
     private void customerListPopupSetup()
     {
 
@@ -123,8 +122,8 @@ public class CustomerListManager : MonoBehaviour
             GameObject.Find(String.Format("CustomerList{0}Info", i + 1)).GetComponent<TextMeshProUGUI>().text =
                 String.Format("이름 : {0}\n성별: {1}\n연락처: {2}\n난이도: {3} 특성: {4}",
                 customerList[i].name, customerList[i].sex, customerList[i].phone, (new string('★',customerList[i].difficultyLevel)).PadRight(8),characteristic[customerList[i].characteristic]);
-            GameObject.Find("CustomerList_detail").GetComponent<TextMeshProUGUI>().text = "";
         }
+        GameObject.Find("CustomerList_detail").GetComponent<TextMeshProUGUI>().text = "";
     }
 
     public void SelectCustomer(int i)

@@ -159,6 +159,7 @@ public class SellingManager : MonoBehaviour
         }
         sellingPopup.SetActive(false);
         GameState.IS_POPPED_UP = false;
+        GameState.STAT_POINT++;
     }
 
     void lose()
