@@ -1,0 +1,437 @@
+{
+  "in_game_text": {
+    "script": [
+      {
+        "narrator": "customer",
+        "text": "여보세요?",
+        "narratorImage": "None"
+      },
+      {
+        "narrator": "player",
+        "text": "안녕하세요. 중앙 제약회사의 {0}입니다.",
+        "narratorImage": "None"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day3_girlfriend": {
+    "script": [
+      {
+        "narrator": "girlfriend",
+        "text": "요즘 많이 바빠?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "그래도 올해의 우수 사원이 되려면 열심히 해야지.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "너무 실적에 목 매지 마... 그러지 않아도 돼.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "말은 고맙지만 나는 꼭 1등을 할거야.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "음... 그래 알겠어...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "(여자친구의 표정이 좋지 않네... 내가 열심히 일하는 게 싫은가??)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day4_dream": {
+    "script": [
+      {
+        "narrator": "신준섭",
+        "text": "이 고객 내 담당 고객인데 내가 사정 상 봐드릴 수가 없어서 너한테 부탁 좀 한다.",
+        "narratorImage": "Character/Face/Character_Male3"
+      },
+      {
+        "narrator": "player",
+        "text": "그래?? 특이 사항은 없으시고??",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "신준섭",
+        "text": "어. 잘 봐드려.",
+        "narratorImage": "Character/Face/Character_Male3"
+      },
+      {
+        "narrator": "player",
+        "text": "그래. 고맙다.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(저 녀석이 왜 나한테 잘 해주지..?)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day4_girlfriend": {
+    "script": [
+      {
+        "narrator": "girlfriend",
+        "text": "어제는 내가 반응이 좀 시큰둥 했지?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "내가 생각했던 반응이 아니긴 했어. 열심히 한다고 하면 응원해 줄 거라 생각했지...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "그렇게 생각할 것 같았어... 너가 불편해 할까봐 얘기하지 않으려고 했는데 그냥 얘기해야겠다.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "뭐를??",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "내 아버지에 관한 얘기...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "(여자친구의 아버지는 나를 만나기 전부터 돌아가셨다고만 들었다. 그 이상 얘기하려고 하지도 않고, 더 물어보기도 뭐해서 그냥 있었는데...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "사실 내 아버지는 사고로 돌아가셨어.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "어떤 사고..?",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "드시면 안 되는 약을 드셨거든.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "어쩌다가?",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "어느 제약회사 직원이 약을 추천해서 사게 되었는데 거기 아버지가 먹으면 안 되는 성분이 들어있었어...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "아니 그런건 제약회사나 직원이 미리 알려줘야 하는 거 아니야?",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "직원이 실적 욕심 때문에 부작용에 대한 고지를 안 한 것 같더라고...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "아니 아무리 실적이 중요하다고 해도 그렇지...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "회사 상대로 소송도 걸어봤는데 잘 안 됐어.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "그런 일이 있었구나...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "너도 같은 일을 하고 있는 사람이니까 괜히 신경 쓰일까봐 얘기 안 하려고 했어.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "그런데 너가 최근 부쩍 실적 욕심을 내는 것 같길래 아버지 생각이 나서 어제 반응이 그랬던 거야. 미안해.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "아니야... 그런 일이 있었으면 충분히 그렇게 생각할 수 있지.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "나는 유능한 판매원이 되고 싶은 건 맞지만 그런 식으로까지 실적을 내고 싶진 않아. 그러니까 그런 걱정은 하지마.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "알겠어. 나도 앞으로 오해하지 않고 응원해줄게!!",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "고마워.",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_dream": {
+    "script": [
+      {
+        "narrator": "???",
+        "text": "여보세요?",
+        "narratorImage": "Character/Face/Character_Male5"
+      },
+      {
+        "narrator": "player",
+        "text": "안녕하세요. ** 제약회사의 {0}입니다. 이번에 제가 고객님을 새로 담당하게 되었습니다.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "???",
+        "text": "아 네. 어쩐 일이 시죠?",
+        "narratorImage": "Character/Face/Character_Male5"
+      },
+      {
+        "narrator": "player",
+        "text": "이번에 굉장히 좋은 신제품이 나와서 추천드리려고 전화드렸습니다.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "???",
+        "text": "음... 제가 전에 주문했던 약이 좋았어서 그 제품으로 재주문하려고 했었는데요.",
+        "narratorImage": "Character/Face/Character_Male5"
+      },
+      {
+        "narrator": "player",
+        "text": "저번에 사셨던 제품도 좋은데 이번 제품이 특히 고객님 나이대 분들이 많이 찾으시는 제품입니다.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "???",
+        "text": "그렇게까지 추천해 주시니 한 번 먹어보겠습니다. 전 담당자 분께서도 잘 봐주셨으니 믿고 주문하겠습니다.",
+        "narratorImage": "Character/Face/Character_Male5"
+      },
+      {
+        "narrator": "player",
+        "text": "감사합니다. 후회하지 않으실 겁니다. 그럼 이번 주 내로 배송해드리겠습니다. 백인혁 씨.",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_dream_black": {
+    "script": [
+      {
+        "narrator": "player",
+        "text": "(...백?)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_girlfriend": {
+    "script": [
+      {
+        "narrator": "girlfriend",
+        "text": "표정이 왜 그래?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "음...이상한 꿈을 꿨는데...너무 실감나는 꿈이어서...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "무슨 꿈이었길래 그래?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "(대략 꿈에 대한 얘기를 해주었다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "어제 내가 했던 얘기 때문에 많이 신경 쓰였나보네...",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "그런가... 근데 그 사람 이름이... 백씨였어.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "뭐?? 이름이 뭐였는지도 기억나?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "백인혁.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "... 난 내 아버지 이름 말해준 적 없어. 그 이름 어디서 들은거야?",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "어디서 들었냐니까?? 뭐라고 말 좀 해봐.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "서아야... 아무래도 단순한 꿈이 아니었던 것 같아...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "그게 무슨 소리야?",
+        "narratorImage": "girlfriendImage.jpg"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_monolouge":{
+    "script": [
+      {
+        "narrator": "player",
+        "text": "(사실 어제의 꿈으로 기억이 어렴풋이 돌아왔다...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그건 단순한 꿈이 아니라 <기억>이었다라는 것을...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(나는 ** 제약회사의 판매원이었다. 그리고 실적에 눈이 멀어있는 상태였다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(입사 동기와 올해의 우수 사원 1위 자리를 놓고 경쟁했지만 그 녀석을 따라 잡을 수 없었다. 그 기회가 오기 전까진.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그 녀석은 알 수 없는 이유로 나에게 본인의 담당 고객을 부탁했고, 최근 부진하고 있는 녀석을 제치기 위한 더할 나위 없는 기회였기에 거절 할 이유 따윈 없었다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(나는 그 고객에게 고가의 신제품을 판매하기 위해 설득을 계속 했고 결국 성공하며 올해의 최우수 사원 타이틀을 따냈지만...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(분명 동기 녀석은 큰 이상이 없는 고객이라고 했다. 특정 성분에 치명적인 알러지를 보유한 고객이라는 얘기는 들은 적이 없는데.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(내가 더 신중 해야 했다... 그런 결과가 나올 줄 꿈에도 몰랐지만, 더 조심하고 침착했어야 했다. 목표에 정신이 팔려 그렇게나 중요한 것을...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그 고객의 딸이 회사 상대로 소송을 걸었다는 얘기를 들었었다. 증거 불충분으로 소송 건을 마무리 되었지만, 나는 죄책감에 시달려 일상 생활조차 할 수 없었다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그 딸에게 찾아가 사과도 해보고 싶었지만 막상 만날 자신이 없었고 그저 그 현실을 마주하고 싶지 않았다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그렇게 나는 내 의지로 모든 기억을 지워냈다. 그 현실을 다시는 마주하지 않기 위해 회사도 옮겼다. 그렇게 죄책감에서 벗어나 행복한 삶을 살고 있었는데.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(결국 마주하게 되었다. 다시는 마주하고 싶지 않았던 그 현실을.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "player",
+        "text": "(그 때 그 딸에게 사과하러 갔다면 일이 이렇게 까지 되진 않았을 것이다. 내 얼굴을 잊을 수 없을 테니까...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_girlfriend_fight": {
+    "script": [
+      {
+        "narrator": "girlfriend",
+        "text": "당장 내 눈 앞에서 사라져.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "내 얘기를 한 번만 들어줘.",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  },
+  "day5_girlfriend_fight_victory": {
+    "script": [
+      {
+        "narrator": "player",
+        "text": "일이 그렇게 되어서 정말 미안해. 내가 좀 더 조심했으면 그런 일은 없었을 텐데...",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "얘기를 들어보니 그 동료가 너를 함정에 빠뜨리려고 한 것 같은데... 너만의 잘 못이라고 할 수는 없는 것 같아.",
+        "narratorImage": "girlfriendImage.jpg"
+      },
+      {
+        "narrator": "player",
+        "text": "그래도 정말 미안해. 사과도 그 때 찾아가서 했었어야 하는데 너무 늦은 것 같네.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "girlfriend",
+        "text": "화가 나긴 하지만... 이미 지난 일인데 어쩌겠어. 너도 마음 고생 많이 해왔던 것 같은데... 이제 괜찮아.",
+        "narratorImage": "girlfriendImage.jpg"
+      }
+    ],
+    "nextStep": ""
+  }
+}
