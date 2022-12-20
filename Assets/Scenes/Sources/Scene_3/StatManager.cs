@@ -11,17 +11,66 @@ public class StatManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI selectedCountText;
     [SerializeField] TextMeshProUGUI todayBookText;
 
+    public Button powBtn;
+    public Button vocalBtn;
     public Button inventoryBtn;
     public Button customerCntBtn;
     public Button searchPowBtn;
     public GameObject statUI;
     public GameObject investCanvas1;
     public GameObject investCanvas2;
+    public GameObject gotoBedUI;
+    public GameObject cinemaUI;
+    public GameObject chattingUI;
 
     private int[] _isSelected = new int[5];
     private int _selectedCount = 0;
     private int _todayBookNum = 0;
     private string[] _todayBookText = { "신뢰", "논리", "감정" };
+
+    public void SetupStatManager()
+    {
+        if (GameState.IS_PAUSED == true) return;
+
+        if (GameState.DAY == 2) GameState.STAT_POINT=1;
+
+        CameraMoving.fixCameraLoc(CameraPositions.BEDROOM_CAMERA_POSITION, CameraPositions.BEDROOM_CAMERA_ROTATION);
+        GameState.PROGRESS = "BEDROOM_NIGHT";
+        gameObject.SetActive(true);
+        gotoBedUI.SetActive(false);
+
+        if(GameState.SCRIPT_KEY != "")
+        {
+            chattingUI.SetActive(true);
+        }
+
+        _selectedCount = 0;
+        _isSelected = new int[5];
+        selectedCountText.text = String.Format("{0} / {1}", 0, GameState.STAT_POINT);
+
+        loadTodayBook();
+
+        var powColors = powBtn.colors;
+        powColors.normalColor = new Color(255, 255, 255, 255);
+        powColors.highlightedColor = new Color(245, 245, 245, 255);
+        powBtn.colors = powColors;
+        var vocalColors = vocalBtn.colors;
+        vocalColors.normalColor = new Color(255, 255, 255, 255);
+        vocalColors.highlightedColor = new Color(245, 245, 245, 255);
+        vocalBtn.colors = vocalColors;
+        var invColors = inventoryBtn.colors;
+        invColors.normalColor = new Color(255, 255, 255, 255);
+        invColors.highlightedColor = new Color(245, 245, 245, 255);
+        inventoryBtn.colors = invColors;
+        var ccColors = customerCntBtn.colors;
+        ccColors.normalColor = new Color(255, 255, 255, 255);
+        ccColors.highlightedColor = new Color(245, 245, 245, 255);
+        customerCntBtn.colors = ccColors;
+        var searchColors = searchPowBtn.colors;
+        searchColors.normalColor = new Color(255, 255, 255, 255);
+        searchColors.highlightedColor = new Color(245, 245, 245, 255);
+        searchPowBtn.colors = searchColors;
+    }
 
     public void OnButtonClick(Button btn)
     {
@@ -30,14 +79,14 @@ public class StatManager : MonoBehaviour
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
 
-        if (_selectedCount == GameState.STAT_POINT)
-            return;
-
         if (Int32.TryParse(_currentBtnName.Substring(0,1), out int _currentBtnNum))
         {
             _currentBtnNum = _currentBtnNum - 1;
             if (_isSelected[_currentBtnNum] == 0)
             {
+                if (_selectedCount == GameState.STAT_POINT)
+                    return;
+
                 var colors = btn.colors;
                 colors.normalColor = Color.green;
                 colors.highlightedColor = Color.green;
@@ -48,7 +97,7 @@ public class StatManager : MonoBehaviour
             else
             {
                 var colors = btn.colors;
-                colors.normalColor = new Color(229, 229, 229, 255);
+                colors.normalColor = new Color(255, 255, 255, 255);
                 colors.highlightedColor = new Color(245, 245, 245, 255);
                 btn.colors = colors;
                 _isSelected[_currentBtnNum] = 0;
@@ -65,6 +114,22 @@ public class StatManager : MonoBehaviour
         {
             selectedCountText.color = Color.white;
         }
+    }
+
+
+    public void GotoBed()
+    {
+        GameState.DAY++;
+        
+        
+        
+        if (GameState.SCRIPT_KEY == "")
+        {
+            GameState.SCRIPT_KEY = String.Format("day{0}_dream", GameState.DAY);
+        }
+        chattingUI.SetActive(true);
+        cinemaUI.SetActive(true);
+
     }
 
     public void SelectBtnClickEvent()
@@ -108,17 +173,21 @@ public class StatManager : MonoBehaviour
             Player.getPlayer().customerCnt++;
         }
 
-        GameState.DAY++;
+        //GameState.DAY++;
         statUI.SetActive(false);
         investCanvas1.SetActive(true);
         investCanvas2.SetActive(true);
+        
+        GotoBed();
+        //cinemaUI.SetActive(true);
+        //chattingUI.SetActive(true);
+
         GameState.STAT_POINT = 0;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        loadTodayBook();
     }
 
     private void loadTodayBook()
@@ -135,7 +204,7 @@ public class StatManager : MonoBehaviour
         {
             inventoryBtn.interactable = false;
         }
-        if (Player.getPlayer().searchPow == 10)
+        if (Player.getPlayer().searchPow == 8)
         {
             searchPowBtn.interactable = false;
         }

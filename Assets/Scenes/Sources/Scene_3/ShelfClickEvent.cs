@@ -30,14 +30,14 @@ public class ShelfClickEvent : MonoBehaviour, IPointerDownHandler
         if (!isClicked)
         {
             objectLocation = defaultLocation + direction;
-            CameraMoving.fixCameraLoc(cameraPosition, cameraRotation);
+            //CameraMoving.fixCameraLoc(cameraPosition, cameraRotation);
             
             isClicked = !isClicked;
         }
         else if (isClicked)
         {
             objectLocation = defaultLocation;
-            CameraMoving.freeCameraLoc();
+            //CameraMoving.freeCameraLoc();
             isClicked = !isClicked;
         }
     }

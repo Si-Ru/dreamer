@@ -19,8 +19,8 @@ public class TelephoneClickEvent : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         if (GameState.IS_POPPED_UP || GameState.IS_PAUSED) return;
+        if (GameState.DAY == 2) return;
 
-        print(GameState.SCRIPT_KEY);
         GameState.IS_POPPED_UP = true;
 
         if (GameState.SCRIPT_KEY== "day1_office_customerList1")

@@ -18,49 +18,61 @@ public class OfficeChattingBar : MonoBehaviour
 
     private int textNum = 0;
 
+    //
+    //private int previousTextNum = -1;
+    //
+    private Dictionary<string, ScriptFile> superScript = null;
+
+    private string tutorialScriptFileName = "Scripts/tutorialScript.json";
+    private string mainScriptFileName = "Scripts/mainScript.json";
+    //private string tutorialScriptFileName = "Assets/Scenes/Scripts/tutorialScript.json";
+    //private string mainScriptFileName = "Assets/Scenes/Scripts/mainScript.json";
 
     public void scriptSkip(){
 
-        int _currentScriptListLength = CameraMoving.SuperScript[GameState.SCRIPT_KEY].script.Count;
+        int _currentScriptListLength = superScript[GameState.SCRIPT_KEY].script.Count;
 
         if(textNum < _currentScriptListLength - 1){
             textNum = textNum + 1;
             GameState.IS_PAUSED = true;
         }
         else{
-            GameState.SCRIPT_KEY = CameraMoving.SuperScript[GameState.SCRIPT_KEY].nextStep;
+            GameState.SCRIPT_KEY = superScript[GameState.SCRIPT_KEY].nextStep;
+
             gameObject.SetActive(false);
             GameState.IS_PAUSED = false;
             textNum = 0;
 
             if(GameState.TUTORIAL == true && GameState.SCRIPT_KEY == "")
             {
-                CameraMoving.loadScript("Assets/Scenes/Scripts/mainScript.json");
+                GameState.TUTORIAL = false;
+                loadScript(mainScriptFileName);
             }
         }
 
     }
 
-
-
+    void loadScript(string jsonFile)
+    {
+        FileStream fileStream = new FileStream(jsonFile, FileMode.Open);
+        byte[] data = new byte[fileStream.Length];
+        fileStream.Read(data, 0, data.Length);
+        fileStream.Close();
+        string jsonString = Encoding.UTF8.GetString(data);
+        superScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-
-
-
-
-        GameState.SCRIPT_KEY = "day2_office_tutorial_2";
-        //GameState.SCRIPT_KEY = "day1_office_sellingFailed";
-        
-
-
-
+        loadScript(tutorialScriptFileName);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
 
         /*if(gameObject.activeSelf == true){
             GameState.IS_PAUSED = true;
@@ -69,11 +81,16 @@ public class OfficeChattingBar : MonoBehaviour
             GameState.IS_PAUSED = false;
         }*/
 
-        if (CameraMoving.SuperScript != null)
+        if (superScript != null)
         {
-            portrait.GetComponent<RawImage>().texture = (Texture2D)Resources.Load(CameraMoving.SuperScript[GameState.SCRIPT_KEY].script[textNum].narratorImage);
-            Text.text = CameraMoving.SuperScript[GameState.SCRIPT_KEY].script[textNum].text;
-            chatterName.text = CameraMoving.SuperScript[GameState.SCRIPT_KEY].script[textNum].narrator;
+            if(superScript[GameState.SCRIPT_KEY].script[textNum].narratorImage == "")
+            {
+                portrait.GetComponent<RawImage>().texture = (Texture2D)Resources.Load("Character/d_iconemptygravatar");
+            }
+            else
+                portrait.GetComponent<RawImage>().texture = (Texture2D)Resources.Load(superScript[GameState.SCRIPT_KEY].script[textNum].narratorImage);
+            Text.text = superScript[GameState.SCRIPT_KEY].script[textNum].text;
+            chatterName.text = superScript[GameState.SCRIPT_KEY].script[textNum].narrator;
         }
     }
 }

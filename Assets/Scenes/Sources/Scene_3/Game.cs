@@ -10,7 +10,7 @@ public class Option
 
 public class Game
 {
-    private Player player;
+    public Player player;
 
     public Customer customer;
     public int currentTheme;

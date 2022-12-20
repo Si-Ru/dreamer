@@ -3,7 +3,7 @@
     "script": [
       {
         "narrator": "???",
-        "text": "축하드립니다!! 올해의 우수 사원은 player입니다!!",
+        "text": "축하드립니다!! 올해의 우수 사원은 곽두팔입니다!!",
         "narratorImage": ""
       },
       {
@@ -17,17 +17,17 @@
   "day1_bedroom_wakeup": {
     "script": [
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(뭐야..꿈이었구나..)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(나도 언젠가는 올해의 최우수 사원이 될 수 있겠지?)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(오늘도 열심히 해보자.)",
         "narratorImage": "Character/Face/Character_Male8"
       }
@@ -38,7 +38,7 @@
     "script": [
       {
         "narrator": "직원1",
-        "text": "player씨~ 과장님께서 오늘 명단 뽑아주셨어요.",
+        "text": "곽두팔씨~ 과장님께서 오늘 명단 뽑아주셨어요.",
         "narratorImage": "Character/Face/Character_Female6"
       },
       {
@@ -47,18 +47,18 @@
         "narratorImage": "Character/Face/Character_Female6"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "넵.",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(2명밖에 없네. 일단 전화를 걸어보자.)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
         "narrator": "system",
-        "text": "안녕하세요. 게임 진행을 도와드릴 sysyem입니다.",
+        "text": "안녕하세요. 게임 진행을 도와드릴 system입니다.",
         "narratorImage": "Character/Face/Character_Male9"
       },
       {
@@ -217,7 +217,7 @@
         "narratorImage": "Character/Face/Character_Female1"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(좋았어. 다음 사람에게 또 전화해볼까?)",
         "narratorImage": "Character/Face/Character_Male8"
       },
@@ -247,7 +247,7 @@
         "narratorImage": "Character/Face/Character_Male10"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "안녕하세요. 중앙 제약회사입니다. 혹시 최근에 무릎이..",
         "narratorImage": "Character/Face/Character_Male8"
       },
@@ -257,7 +257,7 @@
         "narratorImage": "Character/Face/Character_Male10"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(이런... 들어보지도 않고...)",
         "narratorImage": "Character/Face/Character_Male8"
       },
@@ -278,7 +278,7 @@
         "narratorImage": "Character/Face/Character_Male9"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(오늘은 이만 집에 가볼까.)",
         "narratorImage": "Character/Face/Character_Male8"
       }
@@ -288,24 +288,24 @@
   "day1_home": {
     "script": [
       {
-        "narrator": "girlfriend",
+        "narrator": "백서아",
         "text": "오늘도 수고 많았어~",
-        "narratorImage": "girlfriendImage.jpg"
+        "narratorImage": "Character/Face/Character_Female5"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(여자친구를 보면 항상 힘이 난다.)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "고마워. 많이 기다렸어?",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "girlfriend",
+        "narrator": "백서아",
         "text": "아니야. 어서 밥 먹자.",
-        "narratorImage": "girlfriendImage.jpg"
+        "narratorImage": "Character/Face/Character_Female5"
       }
     ],
     "nextStep": "day1_bedroom_levelUpTutorial"
@@ -313,12 +313,12 @@
   "day1_bedroom_levelUpTutorial": {
     "script": [
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(오늘도 보람찬 하루였다.)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(그나저나 어떻게 하면 더 설득을 잘 할 수 있을지 생각을 좀 해볼까?)",
         "narratorImage": "Character/Face/Character_Male8"
       },
@@ -351,21 +351,11 @@
         "narrator": "system",
         "text": "당일 판매에 성공한 고객의 수 만큼 성장 행위를 선택할 수 있습니다. 여러 방법을 통해 성장하세요.",
         "narratorImage": "Character/Face/Character_Male9"
-      }
-    ],
-    "nextStep": "day1_bedroom_levelUpDone"
-  },
-  "day1_bedroom_levelUpDone": {
-    "script": [
-      {
-        "narrator": "player",
-        "text": "(좋았어. 내일은 더 잘 할 수 있을 것 같은데.)",
-        "narratorImage": "Character/Face/Character_Male8"
       },
-      {
-        "narrator": "player",
-        "text": "이제 자야겠다.",
-        "narratorImage": "Character/Face/Character_Male8"
+	  {
+        "narrator": "system",
+        "text": "주어진 포인트를 사용하고 잠에 드세요.",
+        "narratorImage": "Character/Face/Character_Male9"
       }
     ],
     "nextStep": "day2_dream"
@@ -373,14 +363,14 @@
   "day2_dream": {
     "script": [
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "이건 꼭 사셔야 합니다. 고객님께 정말 필요한 제품이에요.",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "unknown",
+        "narrator": "???",
         "text": "...",
-        "narratorImage": "questionMark.jpg"
+        "narratorImage": "Character/Face/Character_Male5"
       }
     ],
     "nextStep": "day2_bedroom_wakeup"
@@ -388,17 +378,17 @@
   "day2_bedroom_wakeup": {
     "script": [
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(으음.. 무슨 꿈이었지...)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(누구한테 뭔가를 팔고 있었던 것 같은데.. 기억이 잘 나지 않네.)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(일단 오늘도 화이팅 해볼까.)",
         "narratorImage": "Character/Face/Character_Male8"
       }
@@ -453,17 +443,17 @@
         "narratorImage": "Character/Face/Character_Male9"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(전화를 걸어볼까.)",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
         "narrator": "직원1",
-        "text": "{0}님, 오늘 오후에 외부 교육 일정 잡혀 있던 거 잊지 않으셨죠?",
-        "narratorImage": "Character/Face/Character_Male8"
+        "text": "곽두팔님, 오늘 오후에 외부 교육 일정 잡혀 있던 거 잊지 않으셨죠?",
+        "narratorImage": "Character/Face/Character_Female6"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "(이런.. 오늘은 일단 가야겠군..)",
         "narratorImage": "Character/Face/Character_Male8"
       }
@@ -473,22 +463,22 @@
   "day2_home": {
     "script": [
       {
-        "narrator": "girlfriend",
+        "narrator": "백서아",
         "text": "오늘은 일찍 왔네??",
-        "narratorImage": "girlfriendImage.jpg"
+        "narratorImage": "Character/Face/Character_Female5"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "응 오늘은 외부 교육 일정이 있어서.. ",
         "narratorImage": "Character/Face/Character_Male8"
       },
       {
-        "narrator": "girlfriend",
+        "narrator": "백서아",
         "text": "수고 많았네!! 집에서 푹 쉬어",
-        "narratorImage": "girlfriendImage.jpg"
+        "narratorImage": "Character/Face/Character_Female5"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "고마워.",
         "narratorImage": "Character/Face/Character_Male8"
       }
@@ -524,13 +514,13 @@
     "script": [
       {
         "narrator": "직원2",
-        "text": "옆 사무실에 준섭 씨 이번 주 공 치셨다네요. 그럼 {0}님이 올해 우수 사원 노려보실 수 있으신 거 아니에요?",
+        "text": "옆 사무실에 신준섭 씨 이번 주 공 치셨다네요. 그럼 곽두팔 님이 올해 우수 사원 노려보실 수 있으신 거 아니에요?",
         "narratorImage": "Character/Face/Character_Female4"
       },
       {
-        "narrator": "player",
+        "narrator": "곽두팔",
         "text": "이 사람한테만 팔면 내가 올해의 우수 사원인데..",
-        "narratorImage": "Character/Face/Character_Male9"
+        "narratorImage": "Character/Face/Character_Male8"
       }
     ],
     "nextStep": ""

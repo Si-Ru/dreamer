@@ -10,77 +10,19 @@ using Newtonsoft.Json;
 
 public class CameraMoving : MonoBehaviour
 {
-    private static Vector3 TARGET_CAMERA_POSITION;
-    private static Vector3 TARGET_CAMERA_ROTATION;
-    private static Vector3 ORIGIN_CAMERA_POSITION;
-    private static Vector3 ORIGIN_CAMERA_ROTATION;
+    private static Vector3 CURRENT_CAMERA_POSITION;
+    private static Vector3 CURRENT_CAMERA_ROTATION;
 
-    private static bool DRAGGABLE;
-
-    private float cameraDragspeed = -3.5f;
-    private float cameraMoveSpeed = 0.1f;
-
-    private float x;
-    private float y;
-    private Vector3 rotateValue;
-
-    public GameObject chattingBar;
-
-    // 
-    private static string fileName = "Assets/Scenes/Scripts/tutorialScript.json";
-    //private static string fileName = "tutorialScript.json";
-    public static Dictionary<string, ScriptFile> SuperScript = null;
-    //
+    
 
     public static void fixCameraLoc(Vector3 targetCameraPos, Vector3 targetCameraRot)
     {
-        DRAGGABLE = false;
-        TARGET_CAMERA_POSITION = targetCameraPos;
-        TARGET_CAMERA_ROTATION = targetCameraRot;
-    }
-
-    public static void freeCameraLoc()
-    {
-        DRAGGABLE = true;
-        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
-        DRAGGABLE = false;
-        TARGET_CAMERA_POSITION = ORIGIN_CAMERA_POSITION;
-        TARGET_CAMERA_ROTATION = ORIGIN_CAMERA_ROTATION;
+        CURRENT_CAMERA_POSITION = targetCameraPos;
+        CURRENT_CAMERA_ROTATION = targetCameraRot;
     }
 
     void Start() {
-        
 
-        if (chattingBar.activeSelf != true)
-        {
-            chattingBar.SetActive(true);
-            GameState.IS_PAUSED = true;
-        }
-
-        //Ä«¸Þ¶ó ¹«ºù ¸·¾ÆµÒ
-        DRAGGABLE = false;
-        ORIGIN_CAMERA_POSITION = Camera.main.transform.position;
-        ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
-
-        TARGET_CAMERA_POSITION = Camera.main.transform.position;
-        TARGET_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
-
-        loadScript(fileName);
-    }
-
-    public static void loadScript(string jsonFile)
-    {
-        FileStream fileStream = new FileStream(jsonFile, FileMode.Open);
-        byte[] data = new byte[fileStream.Length];
-        fileStream.Read(data, 0, data.Length);
-        fileStream.Close();
-        string jsonString = Encoding.UTF8.GetString(data);
-        SuperScript = JsonConvert.DeserializeObject<Dictionary<string, ScriptFile>>(jsonString);
-    }
-
-    bool checkCameraLoc()
-    {
-        return ORIGIN_CAMERA_POSITION == Camera.main.transform.position && ORIGIN_CAMERA_ROTATION == Camera.main.transform.eulerAngles;
     }
 
     void Update()
@@ -88,28 +30,7 @@ public class CameraMoving : MonoBehaviour
         if (GameState.IS_PAUSED)
             return;
         
-        //GameState.DAY = GameState.SCRIPT_KEY[3] - '0';
-        
-        
-
-        if (DRAGGABLE && checkCameraLoc() && Input.GetMouseButton(0))
-        {
-            y = Input.GetAxis("Mouse X");
-            x = Input.GetAxis("Mouse Y");
-            rotateValue = new Vector3(x * cameraDragspeed, y * -cameraDragspeed, 0);
-
-            Vector3 _temp = transform.eulerAngles - rotateValue;
-            _temp[0] = Mathf.Clamp(_temp[0], 1, 28);
-            _temp[1] = Mathf.Clamp(_temp[1], 14, 88);
-
-            transform.eulerAngles = _temp;
-            
-            ORIGIN_CAMERA_ROTATION = Camera.main.transform.eulerAngles;
-        }
-        else if (!DRAGGABLE || !checkCameraLoc())
-        {
-            Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, TARGET_CAMERA_POSITION, cameraMoveSpeed);
-            Camera.main.transform.eulerAngles = Vector3.MoveTowards(Camera.main.transform.eulerAngles, TARGET_CAMERA_ROTATION, 8 * cameraMoveSpeed);
-        }
+        Camera.main.transform.position = CURRENT_CAMERA_POSITION;
+        Camera.main.transform.eulerAngles = CURRENT_CAMERA_ROTATION;
     }
 }
