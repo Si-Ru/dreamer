@@ -1,0 +1,528 @@
+{
+  "day1_dream": {
+    "script": [
+      {
+        "narrator": "???",
+        "text": "축하드립니다!! 올해의 우수 사원은 곽두팔입니다!!",
+        "narratorImage": ""
+      },
+      {
+        "narrator": "???",
+        "text": "(짝짝짝짝)",
+        "narratorImage": ""
+      }
+    ],
+    "nextStep": "day1_bedroom_wakeup"
+  },
+  "day1_bedroom_wakeup": {
+    "script": [
+      {
+        "narrator": "곽두팔",
+        "text": "(뭐야..꿈이었구나..)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(나도 언젠가는 올해의 최우수 사원이 될 수 있겠지?)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(오늘도 열심히 해보자.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": "day1_office_tutorial_0"
+  },
+  "day1_office_tutorial_0": {
+    "script": [
+      {
+        "narrator": "직원1",
+        "text": "곽두팔씨~ 과장님께서 오늘 명단 뽑아주셨어요.",
+        "narratorImage": "Character/Face/Character_Female6"
+      },
+      {
+        "narrator": "직원1",
+        "text": "오늘은 여기 있는 고객분들한테 전화하시면 됩니다.",
+        "narratorImage": "Character/Face/Character_Female6"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "넵.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(2명밖에 없네. 일단 전화를 걸어보자.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "system",
+        "text": "안녕하세요. 게임 진행을 도와드릴 system입니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "전화기를 클릭하세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_customerList1"
+  },
+  "day1_office_customerList1": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "고객 명단을 통해 고객에 대한 간단한 정보를 확인할 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "고객의 성향과 설득 난이도에 유의하세요!",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "명단의 첫 번째 고객을 선택해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_tutorial_1.0"
+  },
+  "day1_office_tutorial_1.0": {
+    "script": [
+      {
+        "narrator": "customer1",
+        "text": "여보세요?",
+        "narratorImage": "Character/Face/Character_Female1"
+      },
+      {
+        "narrator": "system",
+        "text": "보이는 것들에 대한 설명을 해드리겠습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "좌측 상단의 파란 게이지는 고객 설득 게이지입니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "고객을 설득할 때마다 게이지가 상승합니다. \n 게이지가 가득 찰 시, 물품을 판매할 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "좌측 상단의 빨간 게이지는 고객 피로도 게이지입니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "고객과 대화할 때마다 게이지가 상승합니다. \n 물품을 판매하기 전에 게이지가 가득 찰 시, 고객이 전화를 끊어버리니 조심하세요!!",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[주제]는 현재 대화 흐름 상 적절한 설득의 방법을 의미합니다. 대화의 흐름에 맞는 말을 꺼내보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[고객 성향]은 현재 대화 중인 고객의 성향입니다. 해당 유형의 말로 설득에 성공할 시, 설득 게이지가 더 빠르게 상승합니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "좌측 하단의 선택지들은 현재 선택할 수 있는 대화 커맨드입니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "본인의 능력치에 따라 더 많은 선택지를 가질 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "우측 하단의 아이콘들은 현재 고객이 선택할 수 있는 대화 커맨드입니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "서로의 커맨드에 따라 피로도와 설득 게이지가 상승합니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "대화 흐름과 고객 성향에 맞는 커맨드를 선택해 설득에 성공하세요!",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "아무 커맨드를 선택해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_tutorial_1.1"
+  },
+  "day1_office_tutorial_1.1": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "[주제]에 맞는 커맨드를 선택한다면 유리한 대화를 이끌어 나갈 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "이 때 고객이 [주제]에 맞지 않는 말을 한다면 더 크게 설득할 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "반대로 [주제]에 맞지 않는 커맨드를 선택하게 된다면 고객이 쉽게 피곤해합니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "서로 [주제]에 맞지 않는 대화를 한다면 큰 변화 없이 다음 대화로 넘어가게 됩니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "다시 아무 커맨드를 선택해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_tutorial_1.2"
+  },
+  "day1_office_tutorial_1.2": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "추가적으로, 고객 성향에 맞는 커맨드를 선택한다면 보너스가 있답니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "이제부터 자유롭게 플레이 해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_sellingSuccess"
+  },
+  "day1_office_sellingSuccess": {
+    "script": [
+      {
+        "narrator": "customer1",
+        "text": "그럼 일단 하나 주문해보겠습니다.",
+        "narratorImage": "Character/Face/Character_Female1"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(좋았어. 다음 사람에게 또 전화해볼까?)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+	  {
+        "narrator": "system",
+        "text": "다시 전화기를 클릭하세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_customerList2"
+  },
+  "day1_office_customerList2": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "다른 고객을 선택해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day1_office_tutorial_2.0"
+  },
+  "day1_office_tutorial_2.0": {
+    "script": [
+      {
+        "narrator": "customer2",
+        "text": "여보세요.",
+        "narratorImage": "Character/Face/Character_Male10"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "안녕하세요. 중앙 제약회사입니다. 혹시 최근에 무릎이..",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "customer2",
+        "text": "(뚝)",
+        "narratorImage": "Character/Face/Character_Male10"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(이런... 들어보지도 않고...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "system",
+        "text": "난이도가 높은 고객은 일정 이상 능력치를 가지고 있지 않으면 설득 시도가 불가능합니다. \n 고객의 난이도에 유의하세요!",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+      
+    ],
+    "nextStep": "day1_office_sellingFailed"
+  },
+  "day1_office_sellingFailed": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "하루에는 정해진 수의 사람에게만 전화가 가능합니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(오늘은 이만 집에 가볼까.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": "day1_home"
+  },
+  "day1_home": {
+    "script": [
+      {
+        "narrator": "백서아",
+        "text": "오늘도 수고 많았어~",
+        "narratorImage": "Character/Face/Character_Female5"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(여자친구를 보면 항상 힘이 난다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "고마워. 많이 기다렸어?",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "백서아",
+        "text": "아니야. 어서 밥 먹자.",
+        "narratorImage": "Character/Face/Character_Female5"
+      }
+    ],
+    "nextStep": "day1_bedroom_levelUpTutorial"
+  },
+  "day1_bedroom_levelUpTutorial": {
+    "script": [
+      {
+        "narrator": "곽두팔",
+        "text": "(오늘도 보람찬 하루였다.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(그나저나 어떻게 하면 더 설득을 잘 할 수 있을지 생각을 좀 해볼까?)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "system",
+        "text": "하루 일과가 끝나면 여러 행동들을 통해 능력치를 키울 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[책 읽기]를 통해 [언변] 능력을 키울 수 있습니다. [언변] 능력치는 설득력을 상승시킵니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "책의 종류에 따라 <논리>, <감정>, <신뢰>에 해당하는 언변 능력을 키울 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[발성 연습]을 통해 듣기 편한 목소리를 만들어 [매력] 능력치를 상승시킬 수 있습니다. [매력] 능력치는 고객의 피로도 증가량을 감소시킵니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[명상]을 통해 대화를 여유롭게 이끌 수 있는 [침착] 능력을 기릅니다. [침착] 능력치는 사용가능한 커맨드 수량을 증가시킵니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "당일 판매에 성공한 고객의 수 만큼 성장 행위를 선택할 수 있습니다. 여러 방법을 통해 성장하세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+	  {
+        "narrator": "system",
+        "text": "주어진 포인트를 사용하고 잠에 드세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day2_dream"
+  },
+  "day2_dream": {
+    "script": [
+      {
+        "narrator": "곽두팔",
+        "text": "이건 꼭 사셔야 합니다. 고객님께 정말 필요한 제품이에요.",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "???",
+        "text": "...",
+        "narratorImage": "Character/Face/Character_Male5"
+      }
+    ],
+    "nextStep": "day2_bedroom_wakeup"
+  },
+  "day2_bedroom_wakeup": {
+    "script": [
+      {
+        "narrator": "곽두팔",
+        "text": "(으음.. 무슨 꿈이었지...)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(누구한테 뭔가를 팔고 있었던 것 같은데.. 기억이 잘 나지 않네.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(일단 오늘도 화이팅 해볼까.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": "day2_office_tutorial_0"
+  },
+  "day2_office_tutorial_0": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "오늘은 직접 고객 명단을 작성해 보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "컴퓨터를 클릭해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day2_office_tutorial_1"
+  },
+  "day2_office_tutorial_1": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "컴퓨터로 고객 명단 후보를 조사합니다. \n 조사한 결과를 통해 고객 후보들의 정보를 확인할 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "조사한 후보들 중 일정 수 만큼 선택하여 명단을 작성합니다. 고객 특성과 난이도 등을 파악하여 최적의 명단을 구성해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day2_office_tutorial_2"
+  },
+  "day2_office_tutorial_2": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "자, 이제 작성한 명단의 고객들에게 전화를 걸어서 물품을 판매해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "판매를 진행하기 위해선 전화기를 클릭하시면 됩니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "이제부터는 스스로 진행해보세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(전화를 걸어볼까.)",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "직원1",
+        "text": "곽두팔님, 오늘 오후에 외부 교육 일정 잡혀 있던 거 잊지 않으셨죠?",
+        "narratorImage": "Character/Face/Character_Female6"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "(이런.. 오늘은 일단 가야겠군..)",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": "day2_home"
+  },
+  "day2_home": {
+    "script": [
+      {
+        "narrator": "백서아",
+        "text": "오늘은 일찍 왔네??",
+        "narratorImage": "Character/Face/Character_Female5"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "응 오늘은 외부 교육 일정이 있어서.. ",
+        "narratorImage": "Character/Face/Character_Male8"
+      },
+      {
+        "narrator": "백서아",
+        "text": "수고 많았네!! 집에서 푹 쉬어",
+        "narratorImage": "Character/Face/Character_Female5"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "고마워.",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": "day2_bedroom_levelUpTutorial"
+  },
+  "day2_bedroom_levelUpTutorial": {
+    "script": [
+      {
+        "narrator": "system",
+        "text": "자기 전 행동으로 조사 능력을 키울 수 도 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[웹 서핑]를 통해 [정보력] 능력을 키울 수 있습니다. [정보력] 능력치는 조사하는 고객 명단 후보의 수를 증가시킵니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "[운동 하기]를 통해 [체력] 능력을 키울 수 있습니다. [체력] 능력치는 명단에 추가할 수 있는 고객 수를 늘려줍니다. 따라서 더 많은 고객과 전화를 할 수 있습니다.",
+        "narratorImage": "Character/Face/Character_Male9"
+      },
+      {
+        "narrator": "system",
+        "text": "판매 능력 못지 않게 조사 능력 또한 중요한 능력입니다. 능력치를 잘 분배하여 실적을 올리세요.",
+        "narratorImage": "Character/Face/Character_Male9"
+      }
+    ],
+    "nextStep": "day3_dream"
+  },
+  "day3_dream": {
+    "script": [
+      {
+        "narrator": "직원2",
+        "text": "옆 사무실에 신준섭 씨 이번 주 공 치셨다네요. 그럼 곽두팔 님이 올해 우수 사원 노려보실 수 있으신 거 아니에요?",
+        "narratorImage": "Character/Face/Character_Female4"
+      },
+      {
+        "narrator": "곽두팔",
+        "text": "이 사람한테만 팔면 내가 올해의 우수 사원인데..",
+        "narratorImage": "Character/Face/Character_Male8"
+      }
+    ],
+    "nextStep": ""
+  }
+}
